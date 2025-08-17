@@ -518,3 +518,42 @@ Wire bonding establishes electrical interconnections between the die and the ext
 5. Marking: It involves applying identification details to the molded package using techniques like laser etching, ink printing, or stamping. The information such as part numbers, manufacturer logos, batch codes, or date codes is imprented on the top surface of the package after molding. Marking allows tracking of the IC through the supply chain, aiding in quality control, warranty claims, and recalls if defects are identified. It provides critical information for assembly lines, customers, and end-users to distinguish between different IC types or versions. Manufacturer logos or codes enhance brand recognition and authenticity. Without marking, it would be challenging to manage inventory or ensure the correct IC is used in specific applications, potentially leading to errors or counterfeit issues.
 
 6. Singulation (Dicing Blade): Singulation separates individual packaged ICs from a panel or strip (e.g., a leadframe or substrate array) into standalone units. The sawing or punching machine cuts through the molded panel along pre-defined scribe lines. These techniques are chosen based on package type (e.g., QFN, BGA) and material.
+   
+
+2.4 - Flip Chip Assembly - Bump Formation And Underfill
+
+
+<img width="1902" height="1054" alt="image" src="https://github.com/user-attachments/assets/e30d453c-b6a0-4775-b807-e12e6e085286" />
+
+
+The flip-chip packaging process, a sophisticated back-end semiconductor manufacturing technique within the ATMP (Assembly, Testing, Marking, and Packaging) workflow. Conducted in a cleanroom environment (e.g., ISO Class 6/7), this process transforms a silicon die into a fully packaged integrated circuit (IC) ready for integration. The below sequence reflects a comprehensive flip-chip process, typical in advanced packages like FC-BGA or 2.5D designs (e.g., Nvidia H100).
+
+
+Flip-Chip Packaging Process
+
+1. Bump Formation on Silicon: Solder bumps or copper pillars are created on the active side of the silicon die at the bond pad locations. This involves applying an under-bump metallurgy (UBM) layer followed by solder deposition . Bumps provide electrical and mechanical connections when the die is flipped onto the substrate, enabling high pin counts and short signal paths for improved performance and reduced inductance.
+
+2. Chip Flip and Placement: The bumped die is inverted and precisely aligned with matching pads on the substrate (e.g., laminate or interposer). A pick-and-place machine positions the die, ensuring accurate alignment before bonding. Flipping and placing the die face-down maximizes I/O density and thermal efficiency. Proper alignment prevents electrical shorts or open connections, critical for the subsequent reflow process.
+
+3. Flux Dispensing: A small amount of flux is dispensed using a dispensing tool onto the substrate pads or die bumps to remove oxides and improve solder wetting during reflow. Flux ensures a clean surface for solder bonding, enhancing the strength and reliability of the connections by preventing oxidation and promoting uniform solder flow.
+
+4. Solder Reflow: The assembly is heated in a reflow oven (e.g., 220-250°C) to melt the solder bumps, forming metallurgical bonds between the die and substrate. Reflow solidifies the electrical and mechanical connections, locking the die to the substrate. This step is essential for establishing a robust interconnect network.
+
+5. Flux Cleansing: Residual flux is removed using a cleaning agent (e.g., deionized water or solvent) to prevent corrosion or contamination. The cleaning station or rinse process eliminates flux residues that could degrade long-term reliability by causing electrical leakage or chemical reactions, ensuring the package's durability.
+
+6. Underfill Dispensing: Liquid epoxy underfill is applied along the die edges, flowing beneath via capillary action to fill the gap between the die and substrate. Underfill reinforces the structure, compensating for thermal expansion mismatches and protecting bumps from mechanical stress or moisture ingress using a nozzle dispensing underfill.
+
+7. Underfill Cure: The underfill is cured with heat (e.g., 100-150°C) in an oven to harden into a solid polymer. Curing stabilizes the underfill, securing the die and enhancing reliability by preventing movement or degradation under operational conditions.
+
+8. Molding: The entire assembly is encapsulated with a mold compound (e.g., epoxy resin) using a transfer molding machine to protect the die, bumps, and underfill. Molding shields the internal components from environmental factors like humidity, dust, and mechanical shock, ensuring long-term functionality and robustness.
+
+9. Marking: Identification details (e.g., part number, logo, batch code) are etched onto the molded package using laser marking or ink printing. Marking enables traceability, identification, and branding, facilitating quality control and supply chain management.
+
+10. Ball Mounting and Reflow on Substrate: Solder balls are placed on the substrate’s bottom pads (for BGA packages), and the assembly is heated in a reflow oven to bond the balls, completing the package-to-board interface. Ball mounting and reflow create the external connections for surface-mounting the package onto a PCB, ensuring reliable electrical and mechanical attachment for final integration.
+
+
+2.5 - Wafer Level Packaging And Conclusion
+
+
+
+
