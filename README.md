@@ -555,5 +555,229 @@ Flip-Chip Packaging Process
 2.5 - Wafer Level Packaging And Conclusion
 
 
+Wafer Level Packaging (WLP), a cutting-edge semiconductor packaging technique that encapsulates and interconnects dies at the wafer level before singulation. This process, part of the ATMP (Assembly, Testing, Marking, and Packaging) workflow, is conducted in a cleanroom environment (e.g., ISO Class 6/7) to maintain high yield and quality. This contrasts with traditional die-by-die packaging, offering a smaller form factor (close to the die size), better electrical performance, and cost efficiency for high-volume production.
+
+<img width="1920" height="1080" alt="M2_Lecture5" src="https://github.com/user-attachments/assets/d4aa3868-f1a0-437e-b6ff-441c2580b558" />
+
+
+Types of WLP
+
+Fan-in WLP (FI-WLP): Interconnects are confined within the die area, limiting I/O count but ideal for compact, low-pin-count devices.
+
+Fan-out WLP (FO-WLP): Extends interconnects beyond the die area onto the package, enabling higher I/O counts and supporting complex chips like CPUs or GPUs.
+
+
+FO-WLP Process: Fan-out Wafer Level Packaging involves embedding known good dies into a reconstituted wafer, followed by redistribution and interconnection. FO-WLP allows for larger effective die areas and more I/O connections, accommodating advanced multi-chip designs and improving yield by using only tested dies.
+
+1. Reconstitution Process: Individual dies (after wafer dicing) are placed face-up on a temporary carrier (e.g., glass or tape) with a gap between them. The carrier is then overmolded with an epoxy mold compound to form a reconstituted wafer, embedding the dies. Reconstitution creates a uniform wafer-like structure from disparate dies, enabling wafer-level processing. This step is essential for FO-WLP to expand the interconnect area and support high-density packaging.
+
+2. RDL (Redistribution Layer) Preparation: A redistribution layer is fabricated on the reconstituted wafer to reroute the die’s bond pads to desired locations for external connections. This involves depositing dielectric layers, patterning metal traces (e.g., copper), and via formation. RDL allows flexible pad placement, accommodating solder balls or other interconnects outside the original die footprint. It is critical for fan-out designs, enhancing I/O density and electrical performance.
+
+3. Solder Ball Attach: Solder balls are placed and reflowed onto the RDL pads to form the external connections (e.g., for BGA packages). Solder balls provide the mechanical and electrical interface for mounting the package onto a PCB, ensuring reliable connectivity and supporting surface-mount technology.
+
+4. Final Laser Marking: Identification details (e.g., part number, logo, batch code) are etched onto the package surface using a laser marking system after molding and ball attach. Marking enables traceability, identification, and branding, crucial for quality control and supply chain management after the wafer-level processes are complete.
+
+5. Singulation: The reconstituted wafer is diced into individual packages using a saw or laser along pre-defined scribe lines. Singulation separates the packaged dies into standalone units, allowing them to be picked and placed onto PCBs or shipped. This final step completes the WLP process, transforming the wafer into marketable ICs.
+
+
+
+3 - Labs: Thermal Simulation of Semiconductor Packages with ANSYS tools
+
+
+3.1 - Introduction And Getting Started With ANSYS Electronics Desktop
+
+ANSYS Electronics Desktop, a comprehensive simulation software suite widely used in the design and analysis of electronic systems, including semiconductor packaging, printed circuit boards (PCBs), antennas, and electromagnetic components. Developed by ANSYS, a leader in engineering simulation, this tool enables engineers to model complex electronic designs, predict behavior under various conditions, and refine them before physical prototyping.
+
+
+3.2 - Setting Up A Flip-Chip BGA Package
+
+We will be taking an already available FC-BGA package within the Icepak Toolkit for this simulation exercise.
+
+Step 1 : Open AEDT and launch Icepak
+
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_1" src="https://github.com/user-attachments/assets/4192dc88-ca91-4304-af89-a323c3a8d32d" />
+
+
+The image highlights the following integrated tools within ANSYS Electronics Desktop:
+
+Core Components
+
+HFSS (High-Frequency Structure Simulator): A 3D EM solver for high-frequency applications, such as antennas, filters, and RF circuits, analyzing signal integrity and electromagnetic interference (EMI).
+
+Maxwell: A 2D/3D solver for low-frequency electromagnetic fields, used for motors, transformers, and power electronics, focusing on magnetic and thermal effects.
+
+Q3D Extractor: A tool for extracting parasitic parameters (e.g., capacitance, inductance) from IC packages, interconnects, and PCBs, critical for signal integrity analysis.
+
+Icepak: A computational fluid dynamics (CFD) tool for thermal management, simulating heat dissipation in electronic assemblies.
+
+Circuit Simulator: Integrates with schematic tools to perform time-domain and frequency-domain analyses, linking EM models with circuit behavior.
+
+Step 2.1 : Create a Flipchip BGA Package
+
+
+Icepak -> Toolkit -> Geometry -> Packages -> Flipchip_BGA
+
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_2" src="https://github.com/user-attachments/assets/7790d44c-9de3-4bd2-ae21-c216dde688e2" />
+
+
+Step 2.2 : The Package Configuration window opens 
+
+The dimensions and other aspects of the package, substrate, die, die underfill and the solder balls can be configured here.
+
+Once configured, click OK to generate the package model.
+
+
+<img width="1023" height="560" alt="Lab1_FCBGA_ThermalSim_3 1" src="https://github.com/user-attachments/assets/914e36f6-9e22-4361-84c2-b58da394bf8d" />
+
+<img width="1010" height="548" alt="Lab1_FCBGA_ThermalSim_3 2" src="https://github.com/user-attachments/assets/0c5672c9-94de-4296-8fa7-9d8b5c3045c4" />
+
+<img width="1012" height="551" alt="Lab1_FCBGA_ThermalSim_3 3" src="https://github.com/user-attachments/assets/13ff5ba7-7e07-42cd-a60b-f26f73a531d5" />
+
+<img width="1007" height="552" alt="Lab1_FCBGA_ThermalSim_3 4" src="https://github.com/user-attachments/assets/87855867-a9bb-4b2f-97f2-953eb3268fc4" />
+
+
+
+Package generated in Icepak
+
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_4" src="https://github.com/user-attachments/assets/f0ad08ab-e9bf-4fff-9c3e-923390dd122a" />
+
+
+Step 3 : Explore the 3D Package Model Structure in Icepak
+
+Ball group
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_5 1" src="https://github.com/user-attachments/assets/61bc81e7-87f6-404e-a794-644002b88a8f" />
+
+Substrate
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_5 2" src="https://github.com/user-attachments/assets/4000cf2d-aa92-4cfb-b932-d16ad0f3c6d7" />
+
+Die Underfill
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_5 3" src="https://github.com/user-attachments/assets/7eb9bc93-a808-4b92-a7ff-4f3b2a603446" />
+
+Die
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_5 4" src="https://github.com/user-attachments/assets/c3d5670c-b530-4c6f-a89a-5b6c23ed10c5" />
+
+
+
+3.3 - Material Definitions And Thermal Power Sources
+
+
+Step 4 : Review and modify the material and definition types for the different components of the model.
+
+
+Material Definitions
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_6" src="https://github.com/user-attachments/assets/b43d0b4e-29cc-4bac-8d17-bd0c7d49ad1f" />
+
+
+Step 5.1 : Add/ Assign Source Thermal Model for Die
+
+
+In "Project Manager" sub-window, expand Thermal section and open the BGA1_die_source and configure the thermal condition as shown below:
+
+
+Source Thermal Model for Die
+
+<img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_6 1" src="https://github.com/user-attachments/assets/db6edeab-e95f-4d21-9895-2ea51949a30e" />
+
+
+Step 5.2 : Add/ Assign Source Thermal Model for Substrate
+
+
+To add a thermal boundary condition for the substrate, right click on Flipchip_BGA1_substrate under Models -> Flipchip_BGA1_Group -> Solids and assign a Thermal Source.
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 2" src="https://github.com/user-attachments/assets/484be3af-ad14-4cd6-9cea-20ba1877f6ec" />
+
+
+Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.
+
+<img width="1920" height="1025" alt="Lab1_FCBGA_ThermalSim_6 3" src="https://github.com/user-attachments/assets/e54c5ff7-11b9-412c-9cd8-22eb30f5fbd1" />
+
+
+Step 6 : Add Thermal monitors for the different components
+
+To add a Thermal monitor to the substrate, right click on the Flipchip_BGA1_substrate under Models -> Flipchip_BGA1_Group -> Solids and then choose Assign Monitor -> Point...
+
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 4" src="https://github.com/user-attachments/assets/888be3f8-869e-410b-b80b-d876d64f5585" />
+
+
+In the sub-window that appears, select Temperature
+
+
+<img width="332" height="522" alt="Lab1_FCBGA_ThermalSim_6 5" src="https://github.com/user-attachments/assets/d732b8a9-105b-485c-a29e-85106257aa68" />
+
+
+Repeat the same to add thermal monitors for the die and the die-underfill.
+.
+Thermal monitors added
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 6" src="https://github.com/user-attachments/assets/819e777a-ffa2-4991-b2ea-70d8ca24c8b5" />
+
+
+3.4 - Meshing And Running The Thermal Analysis
+
+Step 7.1 : Generate Mesh
+
+
+Go to the Simulation tab and click on Generate Mesh
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_7" src="https://github.com/user-attachments/assets/3c260a8a-ca70-4cac-b59b-52fa6b37c430" />
+
+
+Save the project if prompted and wait for the mesh generation to get completed.
+
+Take a note of any error(s) and warning(s) that are shown and ignore/ take steps to debug & fix the issue(s) as required.
+
+Step 7.2 : Review Mesh Quality metrics
+
+Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_7 1" src="https://github.com/user-attachments/assets/fd465888-7ae2-431f-a8a3-6ff2ae661d0a" />
+
+Mesh Quality - Face Alignment
+
+<img width="586" height="902" alt="Lab1_FCBGA_ThermalSim_7 2" src="https://github.com/user-attachments/assets/0e9f164b-8c3a-492f-b27c-f2ba22d93187" />
+
+Mesh Quality - Skewness
+
+<img width="585" height="906" alt="Lab1_FCBGA_ThermalSim_7 3" src="https://github.com/user-attachments/assets/7b6e0c34-fbfc-4673-bc07-91cb202537fa" />
+
+Mesh Quality - Volume
+
+<img width="583" height="902" alt="Lab1_FCBGA_ThermalSim_7 4" src="https://github.com/user-attachments/assets/b0ccf082-3a7e-4878-9ca7-b2447621fb4a" />
+
+Step 8 : Add Thermal Analysis
+
+Under Project Manager, right click on Analysis and then, select Add Analysis Setup and configure the solver settings as required. (We will choose all default settings for our analysis)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
