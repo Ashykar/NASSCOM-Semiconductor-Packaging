@@ -753,9 +753,79 @@ Mesh Quality - Volume
 
 <img width="583" height="902" alt="Lab1_FCBGA_ThermalSim_7 4" src="https://github.com/user-attachments/assets/b0ccf082-3a7e-4878-9ca7-b2447621fb4a" />
 
+
+
 Step 8 : Add Thermal Analysis
 
 Under Project Manager, right click on Analysis and then, select Add Analysis Setup and configure the solver settings as required. (We will choose all default settings for our analysis)
+
+
+Add Analysis Setup
+
+<img width="666" height="812" alt="Lab1_FCBGA_ThermalSim_7 5" src="https://github.com/user-attachments/assets/837c5d97-58f2-434a-8eb7-33cd24c8f8d3" />
+
+
+3.5 - Viewing Results And Exploring Other Package Types
+
+Step 9 : Now, Validate the Simulation setup
+
+Click on the Validate button in the top ribbon
+
+Ensure all checks are validated successfully
+
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_8" src="https://github.com/user-attachments/assets/20104ea3-fb7e-4b4a-8941-8cccf6cbf9e8" />
+
+
+Step 10: Run the simulation and plot the temperature map
+
+Click on Analyze All button in the top ribbon
+
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_9" src="https://github.com/user-attachments/assets/6519212a-e922-45e3-8efd-612f05f2d4a7" />
+
+
+Wait for the simulation to get completed successfully. Take note of any warning(s) or errors that may need further debug or setup modification(s).
+
+Once the simulation is completed, select the complete FC-BGA package in the 3D view by drawing a selection rectangle using the left-mouse button.
+
+Right click and then select Plot Fields -> Temperature -> Temperature
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_10" src="https://github.com/user-attachments/assets/8cc3ccdf-4a3f-4e33-8bb1-851bcaca95f7" />
+
+
+Configure the different plot options:
+
+Specify Name, Folder
+
+Plot on Surface only
+
+Surface Smoothing -> Enable Gaussian Smoothing
+
+Field Plot Settings
+
+<img width="1903" height="1012" alt="Lab1_FCBGA_ThermalSim_10 1" src="https://github.com/user-attachments/assets/43967182-d3b9-40e8-b1a0-1ea02b0ee57b" />
+
+
+Field Plot - Top view
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_10 2" src="https://github.com/user-attachments/assets/70449d51-a063-442a-ae63-af368693da99" />
+
+
+Field Plot - Bottom view
+
+<img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_10 3" src="https://github.com/user-attachments/assets/edc0a5e2-988d-494c-aa52-3e7f4a29f74f" />
+
+
+
+
+4 - Ensuring Package Reliability: Testing and Performance Validation
+
+4.1 - Introduction to Package Testing and Electrical Functionality Checks
+
+
+
+
 
 
 
