@@ -822,32 +822,3 @@ Field Plot - Bottom view
 4 - Ensuring Package Reliability: Testing and Performance Validation
 
 4.1 - Introduction to Package Testing and Electrical Functionality Checks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
