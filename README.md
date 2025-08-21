@@ -922,6 +922,83 @@ This is a hands-on lab to design a semiconductor wire bond package from scratch 
 
 The main focus of this lab exercise is to build the virtual cross-section of a wire bond package, including die, substrate, bonding wires, and mold compound, rather than performing thermal simulation or analyses on a Pre loaded package. The complete process flow is once again shown below
 
+Package Specifications:
+
+<table>
+  <tr>
+    <td><strong>Component</strong></td>
+    <td><strong>Properties</strong></td>
+  </tr>
+  <tr>
+    <td>1. Die</td>
+    <td>
+      <ul>
+        <li>Material : Silicon</li>
+        <li>Dimensions : 3mm x 3mm</li>
+        <li>Die Thickness : 200micron / 0.2mm</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>2. Substrate</td>
+    <td>
+      <ul>
+        <li>Material : FR4</li>
+        <li>Dimensions : 5mm x 5mm</li>
+        <li>Thickness : 500micron / 0.5mm</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>3. Die Attach</td>
+    <td>
+      <ul>
+        <li>Material : Modified Epoxy</li>
+        <li>Dimensions : 3mm x 3mm</li>
+        <li>Thickness : 100micron / 0.1mm</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>4. Die Bond Pads</td>
+    <td>
+      <ul>
+        <li>Material : Copper</li>
+        <li>Dimensions : 0.2mm x 0.2mm</li>
+        <li>Thickness : 5micron / 0.005mm</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>5. Substrate Bond Pads</td>
+    <td>
+      <ul>
+        <li>Material : Copper</li>
+        <li>Dimensions : 0.2mm x 0.2mm</li>
+        <li>Thickness : 10micron / 0.01mm</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>6. Bond Wire</td>
+    <td>
+      <ul>
+        <li>Material : Gold wire</li>
+        <li>Type: JEDEC 4-point</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>7. Mold Compound</td>
+    <td>
+      <ul>
+        <li>Material : Epoxy</li>
+        <li>Thickness : 1200micron / 1.2mm</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ![M6_Lecture1](https://github.com/user-attachments/assets/d4c3cb69-d5fa-437a-a135-183166b054b6)
 
 
@@ -938,3 +1015,4 @@ Step 2 : Define the working unit
 Modeler -> Units...
 
 Choose mm or um as the working unit for creating the model.
+
