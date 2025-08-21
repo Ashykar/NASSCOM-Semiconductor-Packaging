@@ -927,6 +927,14 @@ The main focus of this lab exercise is to build the virtual cross-section of a w
 
 Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)
 
+
 <img width="1917" height="1015" alt="M6_Lecture2" src="https://github.com/user-attachments/assets/17958ff3-2b4c-4547-a495-789eaf5396e8" />
 
 
+5.2 - Creating the Die and Substrate in AEDT
+
+Step 2 : Define the working unit
+
+Modeler -> Units...
+
+Choose mm or um as the working unit for creating the model.
