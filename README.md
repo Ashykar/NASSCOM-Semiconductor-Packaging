@@ -822,3 +822,111 @@ Field Plot - Bottom view
 4 - Ensuring Package Reliability: Testing and Performance Validation
 
 4.1 - Introduction to Package Testing and Electrical Functionality Checks
+
+The process begins with Foundry activities, including Front end manufacturing (e.g., wafer creation) and Wafer probe test to check individual circuits. Next, Wafer sorting assesses wafer quality, followed by Package Manufacturing and OSAT (Outsourced Semiconductor Assembly and Test) for packaging and initial testing. Subsequently, Package Testing ensures packaged components function correctly, and System Level Tests (SLT) verify performance in real-world applications. Throughout these stages, Process development supports improvement, with diagnosis, failure analysis at the base to address issues and refine the process.
+
+
+![M5_Lecture1](https://github.com/user-attachments/assets/df2d5487-3ddb-4704-962c-a917e7ae6990)
+
+
+4.1.1 - Foundry Testing Stages
+
+1. Front End Manufacturing: This is the initial phase where silicon wafers are fabricated. It leads to fine tuning of the Process parameters to improve yield, reduce IDDQ/ leakage and improve speed/ performance.
+
+2. Wafer Probe Test: After fabrication, individual circuits on the wafer are tested using probes to check for electrical performance and identify defective dies. Wafer is mounted on a probe station and a probe card with makes contact with the bond pads or bump pads of each die. An ATE can now send test patterns to mark the die as good or bad.
+
+4.1.2 - OSAT Testing Stages
+
+OSAT refers to the outsourcing of assembly and testing to specialized firms. This stage includes final packaging adjustments and initial functional tests on the packaged chips. The Automatic Testing Equipment is used for precision testing to validate packaging integrity.
+
+1. Wafer Sorting: Following the probe test, wafers are sorted based on test results. Functional dies are separated from defective ones, and the wafer may undergo visual or additional electrical inspections. Only functional dies proceed to packaging.
+
+2. Package Manufacturing: This stage involves assembling the sorted dies into packages to protect them and enable connectivity. Processes include die attachment, wire bonding, and encapsulation. 
+
+3. Package Testing: Packaged Testing phase in semiconductor manufacturing, divided into two main areas: the Processing Zone and the Testing Area, with a sequential testing process.
+   
+
+   ![M5_Lecture1 1](https://github.com/user-attachments/assets/7e9b813b-52d7-43ef-8677-9d55bf1a4a80)
+
+   Processing Zone (Clean room: ISO class 6 & 7): This area handles initial packaging steps in a controlled environment. Key activities include die bonding, wire or flip-chip bonding, encapsulation, and RDL        (Redistribution Layer) formation. Inspection is integral to the manufacturing process to ensure quality. Packages are loaded onto a tray after singulation, as shown in the image with a tray of individual        packaged chips.
+
+   Testing Area (Electrical, burn-in, and reliability chamber tests): This area focuses on validating the packaged chips. The process involves:
+   
+   AOST (Assembly Open and Short Test): Checks for open circuits and short circuits on the package board, using a package socket.
+
+
+   ![M5_Lecture1 2](https://github.com/user-attachments/assets/e46c17ad-b761-4858-8e6f-1bb3023f1809)
+
+   
+   Burn-in Test: Elevated temperature and voltage and power cycling are applied to accelerate ageing to catch early-life reliability issues.
+   
+   Final Test: Conducts cold and hot tests to validate functional, parametric, reliability and validate the electrical performance of the packaged IC across temperature and voltage corners and ensure it meets      the datasheet specifications.
+
+6. System Level Tests (SLT) : The final stage involves testing the chips within a complete system (e.g., a device or board) to ensure they perform as expected in real-world conditions.
+
+
+4.2 - Reliability and Performance Testing of Semiconductor Packages
+
+
+4.2.1 Burn-in and Final Test
+
+
+1. Burn-In Test
+
+The Burn-in Test is a testing phase for package components under elevated (stressful) conditions, including temperature, voltage, and power cycling. The objective is to identify "Infant Mortality" failures before they reach customers. 
+
+
+![M5_Lecture2](https://github.com/user-attachments/assets/fb90e245-8712-45b6-8558-c2dac72ac114)
+
+
+Process: Parts are loaded from trays onto Burn-in Boards and then into ovens (via a Burn-in System) for testing. The system applies high voltage and temperature stress to accelerate failures.
+
+Duration: The test is conducted long enough to capture the initial failure rate and slightly beyond where the failure rate curve flattens.
+
+Defect Detection: It can detect defects like dielectric and metallization failures, as well as electromigration.
+
+Trade-off: While it effectively removes unreliable components with a high probability of early failure, the total life span of components is shortened due to the stress.
+
+The bath-tub graph illustrates the failure rate over time analogous to human life:
+
+Infant Mortality: High initial failure rate (early "Infant Mortality" failures) that decreases rapidly.
+
+Useful Life: A period of constant (random) failures with a low rate.
+
+Wear Out: An increase in failure rate as components age.
+
+The test targets the initial drop to eliminate weak components, as shown by the observed failure rate point.
+
+
+2. Final Test (FT)
+   
+
+![M5_Lecture2 1](https://github.com/user-attachments/assets/f19ad80d-3be0-437b-b7c1-c7dc84862d08)
+
+
+The Final Test is a temperature corner test to verify that packaged products meet specifications using an ATE (Electrical Testing Unit) with Handler for placing Devices Under Test (DUTs). ATE ensures precise testing across temperature extremes. The process involves loading the parts into a handler with temperature-controlled test fixtures (not ovens) during testing. They are electrically tested at elevated temperatures according to product specifications to confirm compliance. Finally the parts are subjected to low temperatures per product specifications and electrically tested.
+
+4.2.2 Summary: ATE & Test Categories
+
+
+![M5_Lecture2 2](https://github.com/user-attachments/assets/c629cee6-5ce7-4b27-8036-980691fa34ca)
+
+
+5 - Package Design and Modeling: Building a Semiconductor Package from Scratch
+
+
+This is a hands-on lab to design a semiconductor wire bond package from scratch using Ansys Electronics Desktop (AEDT).
+
+
+5.1 - Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
+
+The main focus of this lab exercise is to build the virtual cross-section of a wire bond package, including die, substrate, bonding wires, and mold compound, rather than performing thermal simulation or analyses on a Pre loaded package. The complete process flow is once again shown below
+
+![M6_Lecture1](https://github.com/user-attachments/assets/d4c3cb69-d5fa-437a-a135-183166b054b6)
+
+
+Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)
+
+<img width="1917" height="1015" alt="M6_Lecture2" src="https://github.com/user-attachments/assets/17958ff3-2b4c-4547-a495-789eaf5396e8" />
+
+
