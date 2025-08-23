@@ -1,6 +1,6 @@
 # NASSCOM-Semiconductor-Packaging
 
-This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by VSD Corp. Pvt. Ltd. attended from 15-24 August, 2025.
+This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
 ??????Imtroduction????
 
