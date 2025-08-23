@@ -821,7 +821,7 @@ The Final Test is a temperature corner test to verify that packaged products mee
 This is a hands-on lab to design a semiconductor wire bond package from scratch using Ansys Electronics Desktop (AEDT).
 
 
-### 5.1 - Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
+### 5.1 - Introduction to Package Cross - Section Modeling in ANSYS Electronics Desktop (AEDT)
 
 The main focus of this lab exercise is to build the virtual cross-section of a wire bond package, including die, substrate, bonding wires, and mold compound, rather than performing thermal simulation or analyses on a Pre loaded package. The complete process flow is once again shown below
 
