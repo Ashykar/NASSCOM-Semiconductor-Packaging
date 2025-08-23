@@ -2,7 +2,6 @@
 
 This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
-https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/blob/main/README.md#2---from-wafer-to-package-assembly-and-manufacturing-essentials
 ??????Imtroduction????
 
 ## Table of Contents
@@ -11,6 +10,9 @@ https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/blob/main/README.md#2
 |----------|------------------|--------|
 | [Mod. 1](#module-1-packaging-evolution-from-basics-to-3d-integration) | **Packaging Evolution: From Basics to 3D Integration**<br>1. [Introduction To Semiconductor Packaging And Industry Overview](#11---introduction-to-semiconductor-packaging-and-industry-overview-)<br>2. [Understanding Package Requirements And Foundational Package Types](#12---understanding-package-requirements-and-foundational-package-types)<br>3. [Evolving Package Architectures - From Single Chip To Multi-Chip Modules](#13---evolving-package-architectures---from-single-chip-to-multi-chip-modules)<br>4. [Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches](#14---interposers-re-distribution-layers-and-25d3d-packaging-approaches)<br>5. [Comparative Analysis And Selecting The Right Packaging Solution](#15---comparative-analysis-and-selecting-the-right-packaging-solution) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
 | [Mod. 2](#2---from-wafer-to-package-assembly-and-manufacturing-essentials) | **From Wafer to Package: Assembly and Manufacturing Essentials**<br>1. [Setting The Stage - Supply Chain And Facilities](#21---setting-the-stage---supply-chain-and-facilities)<br>2. [Wafer Pre-Preparation - Grinding And Dicing](#22---wafer-pre-preparation---grinding-and-dicing)<br>3. [Wire Bond Packaging – Die Attach To Molding](#23---wire-bond-packaging---die-attach-to-molding)<br>4. [Flip Chip Assembly – Bump Formation And Underfill](#24---flip-chip-assembly---bump-formation-and-underfill)<br>5. [Wafer Level Packaging And Conclusion](#25---wafer-level-packaging-and-conclusion) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
+| [Mod. 3](#3---labs-thermal-simulation-of-semiconductor-packages-with-ansys-tools) | **Packaging Evolution: From Basics to 3D Integration**<br>1. [Introduction And Getting Started With ANSYS Electronics Desktop](##31---introduction-and-getting-started-with-ansys-electronics-desktop-)<br>2. [Setting Up A Flip-Chip BGA Package](#32---setting-up-a-flip-chip-bga-package)<br>3. [Material Definitions And Thermal Power Sources](#33---material-definitions-and-thermal-power-sources)<br>4. [Meshing And Running The Thermal Analysis](#34---meshing-and-running-the-thermal-analysis)<br>5. [Viewing Results And Exploring Other Package Types](#35---viewing-results-and-exploring-other-package-types) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
+| [Mod. 4](#2---from-wafer-to-package-assembly-and-manufacturing-essentials) | **From Wafer to Package: Assembly and Manufacturing Essentials**<br>1. [Setting The Stage - Supply Chain And Facilities](#21---setting-the-stage---supply-chain-and-facilities)<br>2. [Wafer Pre-Preparation - Grinding And Dicing](#22---wafer-pre-preparation---grinding-and-dicing)<br>3. [Wire Bond Packaging – Die Attach To Molding](#23---wire-bond-packaging---die-attach-to-molding)<br>4. [Flip Chip Assembly – Bump Formation And Underfill](#24---flip-chip-assembly---bump-formation-and-underfill)<br>5. [Wafer Level Packaging And Conclusion](#25---wafer-level-packaging-and-conclusion) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
+| [Mod. 5](#module-1-packaging-evolution-from-basics-to-3d-integration) | **Packaging Evolution: From Basics to 3D Integration**<br>1. [Introduction To Semiconductor Packaging And Industry Overview](#11---introduction-to-semiconductor-packaging-and-industry-overview-)<br>2. [Understanding Package Requirements And Foundational Package Types](#12---understanding-package-requirements-and-foundational-package-types)<br>3. [Evolving Package Architectures - From Single Chip To Multi-Chip Modules](#13---evolving-package-architectures---from-single-chip-to-multi-chip-modules)<br>4. [Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches](#14---interposers-re-distribution-layers-and-25d3d-packaging-approaches)<br>5. [Comparative Analysis And Selecting The Right Packaging Solution](#15---comparative-analysis-and-selecting-the-right-packaging-solution) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
 
 ---
 
@@ -720,9 +722,9 @@ Field Plot - Bottom view<br><br>
 
 ***
 
-4 - Ensuring Package Reliability: Testing and Performance Validation
+## 4 - Ensuring Package Reliability: Testing and Performance Validation
 
-4.1 - Introduction to Package Testing and Electrical Functionality Checks
+### 4.1 - Introduction to Package Testing and Electrical Functionality Checks
 
 The process begins with Foundry activities, including Front end manufacturing (e.g., wafer creation) and Wafer probe test to check individual circuits. Next, Wafer sorting assesses wafer quality, followed by Package Manufacturing and OSAT (Outsourced Semiconductor Assembly and Test) for packaging and initial testing. Subsequently, Package Testing ensures packaged components function correctly, and System Level Tests (SLT) verify performance in real-world applications. Throughout these stages, Process development supports improvement, with diagnosis, failure analysis at the base to address issues and refine the process.
 
@@ -730,13 +732,13 @@ The process begins with Foundry activities, including Front end manufacturing (e
 ![M5_Lecture1](https://github.com/user-attachments/assets/df2d5487-3ddb-4704-962c-a917e7ae6990)
 
 
-4.1.1 - Foundry Testing Stages
+#### 4.1.1 - Foundry Testing Stages
 
 1. Front End Manufacturing: This is the initial phase where silicon wafers are fabricated. It leads to fine tuning of the Process parameters to improve yield, reduce IDDQ/ leakage and improve speed/ performance.
 
 2. Wafer Probe Test: After fabrication, individual circuits on the wafer are tested using probes to check for electrical performance and identify defective dies. Wafer is mounted on a probe station and a probe card with makes contact with the bond pads or bump pads of each die. An ATE can now send test patterns to mark the die as good or bad.
 
-4.1.2 - OSAT Testing Stages
+#### 4.1.2 - OSAT Testing Stages
 
 OSAT refers to the outsourcing of assembly and testing to specialized firms. This stage includes final packaging adjustments and initial functional tests on the packaged chips. The Automatic Testing Equipment is used for precision testing to validate packaging integrity.
 
@@ -766,10 +768,10 @@ OSAT refers to the outsourcing of assembly and testing to specialized firms. Thi
 6. System Level Tests (SLT) : The final stage involves testing the chips within a complete system (e.g., a device or board) to ensure they perform as expected in real-world conditions.
 
 
-4.2 - Reliability and Performance Testing of Semiconductor Packages
+### 4.2 - Reliability and Performance Testing of Semiconductor Packages
 
 
-4.2.1 Burn-in and Final Test
+#### 4.2.1 Burn-in and Final Test
 
 
 1. Burn-In Test
@@ -819,7 +821,7 @@ The Final Test is a temperature corner test to verify that packaged products mee
 This is a hands-on lab to design a semiconductor wire bond package from scratch using Ansys Electronics Desktop (AEDT).
 
 
-5.1 - Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
+### 5.1 - Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
 
 The main focus of this lab exercise is to build the virtual cross-section of a wire bond package, including die, substrate, bonding wires, and mold compound, rather than performing thermal simulation or analyses on a Pre loaded package. The complete process flow is once again shown below
 
@@ -909,7 +911,7 @@ Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)
 <img width="1917" height="1015" alt="M6_Lecture2" src="https://github.com/user-attachments/assets/17958ff3-2b4c-4547-a495-789eaf5396e8" />
 
 
-5.2 - Creating the Die and Substrate in AEDT
+### 5.2 - Creating the Die and Substrate in AEDT
 
 Step 2 : Define the working unit
 
