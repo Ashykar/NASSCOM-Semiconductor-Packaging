@@ -1,8 +1,53 @@
 # NASSCOM-Semiconductor-Packaging
 
-This GitHub repository documents the NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop offered by VSD Corp. Pvt. Ltd. attended from 15-24 August, 2025.
+This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by VSD Corp. Pvt. Ltd. attended from 15-24 August, 2025.
 
 ??????Imtroduction????
+
+## Table of Contents
+
+| Module # | Topic(s) Covered | Status |
+|----------|------------------|--------|
+| [Mod. 1](#Module-1.-Packaging-Evolution:-From-Basics-to-3D-Integration) | **Packaging Evolution: From Basics to 3D Integration**<br>1. [Introduction To Semiconductor Packaging And Industry Overview](#introduction-to-semiconductor-packaging-and-industry-overview)<br>2. [Understanding Package Requirements And Foundational Package Types](#understanding-package-requirements-and-foundational-package-types)<br>3. [Evolving Package Architectures - From Single Chip To Multi-Chip Modules](#evolving-package-architectures---from-single-chip-to-multi-chip-modules)<br>4. [Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches](#interposers-re-distribution-layers-and-25d3d-packaging-approaches)<br>5. [Comparative Analysis And Selecting The Right Packaging Solution](#comparative-analysis-and-selecting-the-right-packaging-solution) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
+| [Mod. 2](#mod-2) | **From Wafer to Package: Assembly and Manufacturing Essentials**<br>1. [Setting The Stage - Supply Chain And Facilities](#setting-the-stage---supply-chain-and-facilities)<br>2. [Wafer Pre-Preparation - Grinding And Dicing](#wafer-pre-preparation---grinding-and-dicing)<br>3. [Wire Bond Packaging – Die Attach To Molding](#wire-bond-packaging--die-attach-to-molding)<br>4. [Flip Chip Assembly – Bump Formation And Underfill](#flip-chip-assembly--bump-formation-and-underfill)<br>5. [Wafer Level Packaging And Conclusion](#wafer-level-packaging-and-conclusion) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 100%</span> |
+
+---
+
+## Module 1. Packaging Evolution: From Basics to 3D Integration
+
+### Introduction To Semiconductor Packaging And Industry Overview
+...
+
+### Understanding Package Requirements And Foundational Package Types
+...
+
+### Evolving Package Architectures - From Single Chip To Multi-Chip Modules
+...
+
+### Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches
+...
+
+### Comparative Analysis And Selecting The Right Packaging Solution
+...
+
+---
+
+## Mod. 2
+
+### Setting The Stage - Supply Chain And Facilities
+...
+
+### Wafer Pre-Preparation - Grinding And Dicing
+...
+
+### Wire Bond Packaging – Die Attach To Molding
+...
+
+### Flip Chip Assembly – Bump Formation And Underfill
+...
+
+### Wafer Level Packaging And Conclusion
+...
 
 ## Module 1. Packaging Evolution: From Basics to 3D Integration
 
