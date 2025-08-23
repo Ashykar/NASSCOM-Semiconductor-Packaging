@@ -2,7 +2,7 @@
 
 This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
-https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/edit/main/README.md#12---understanding-package-requirements-and-foundational-package-types
+[https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/edit/main/README.md#12---understanding-package-requirements-and-foundational-package-types](https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/edit/main/README.md#14---interposers-rdls-and-25d3d-packaging-approaches)
 ??????Imtroduction????
 
 ## Table of Contents
@@ -240,7 +240,7 @@ The advanced packaging technologies like CoWoS (Chip on Wafer on Substrate) or s
 * Substrate: The base layer, typically a laminate or advanced organic material, connects the interposer to the system board (PCB). It provides mechanical support and routes electrical signals to external pins or balls (e.g., in a BGA package), ensuring integration with the broader electronic system.
 
 
-### 1.4 - Interposers, RDLs And 2.5D/3D Packaging Approaches<br><br>
+### 1.4 - Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches<br><br>
 
 <img width="1898" height="1025" alt="image" src="https://github.com/user-attachments/assets/808cc61e-b573-46e3-b17e-964e473190a4" /><br><br>
 
