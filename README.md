@@ -2,8 +2,6 @@
 
 This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
-https://github.com/Ashykar/NASSCOM-Semiconductor-Packaging/blob/main/README.md#55---applying-mold-compound-and-finalizing-the-package-model
-
 ??????Imtroduction????
 
 ## Table of Contents
@@ -1030,6 +1028,24 @@ Assign gold as the Bondwire material<br><br>
 Now, repeat the steps 6 and 7 to create and connect all the die and substrate bond pads using bondwires.
 
 ### 5.5 - Applying Mold Compound and Finalizing the Package Model
+
+#### Step 8 : Build the mold compound around the die
+
+Create a rectangular enclosure around the die and wires (5mm x 5mm, 1.2mm thickness)
+
+Position at (-1, -1, -0.1) covering the top side of the substrate.<br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_5 1" src="https://github.com/user-attachments/assets/d932f3f2-4784-4346-b618-6de95559ea50" /><br><br>
+
+Set the thickness to 1.2mm so that it covers the die and the bondwires, while also leaving margin for any laser marking processes<br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_5 2" src="https://github.com/user-attachments/assets/e9d4de38-ac2e-4b78-95ec-9aca36444623" /><br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_5 3" src="https://github.com/user-attachments/assets/7d73d76a-51b6-4dd4-985a-73076a7533de" />
+
+
+
+
 
 
 
