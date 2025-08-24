@@ -961,15 +961,24 @@ Set the thickness as -500 microns (-0.5mm). Note the negative sign so as to have
 
 Adjust the substrate position along Z-axis to account for the die attach thickness. Adjusted position: (-1, -1, -0.1)<br><br>
 
+<img width="1920" height="1020" alt="Lab2_Package modelling_2 9" src="https://github.com/user-attachments/assets/63bdd02e-1eb1-4cdb-a6b3-bc16a58fa219" /><br><br>
+
+
 ### 5.3 - Adding Die Attach Material and Bond Pads
 
-Step 5 : Create the Die Attach Material
+#### Step 5 : Create the Die Attach Material
 
-Draw a rectangle of the same size as that of the die (3mm x 3mm) and at the same co-ordinates (0, 0, 0).
+Draw a rectangle of the same size as that of the die (3mm x 3mm) and at the same co-ordinates (0, 0, 0).<br><br>
 
-Set the thickness to -100 microns (-0.1mm) as the DAM lies beneath the die and the substrate
+<img width="1920" height="1020" alt="Lab2_Package modelling_3 1" src="https://github.com/user-attachments/assets/f62e092e-bbc6-4f22-b7c7-fce055c971f9" /><br><br>
 
-Assign the material to Modified Eopxy
+Set the thickness to -100 microns (-0.1mm) as the Die Attach Material lies beneath the die and the substrate<br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_3 2" src="https://github.com/user-attachments/assets/f7ffbede-f67c-4a74-a832-fd7ab89e1561" /><br><br>
+
+Assign the material to Modified Eopxy<br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_3 3" src="https://github.com/user-attachments/assets/943ed05c-95ef-4c63-82b7-4ff0870af28d" /><br><br>
 
 NOTE: Assign different shades/ colours to adjacent components to easily discern in 3D view.
 
