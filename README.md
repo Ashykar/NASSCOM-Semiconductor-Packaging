@@ -12,7 +12,7 @@ This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundam
 | [Module 2](#2---from-wafer-to-package-assembly-and-manufacturing-essentials) | **From Wafer to Package: Assembly and Manufacturing Essentials**<br>1. [Setting The Stage - Supply Chain And Facilities](#21---setting-the-stage---supply-chain-and-facilities)<br>2. [Wafer Pre-Preparation - Grinding And Dicing](#22---wafer-pre-preparation---grinding-and-dicing)<br>3. [Wire Bond Packaging – Die Attach To Molding](#23---wire-bond-packaging---die-attach-to-molding)<br>4. [Flip Chip Assembly – Bump Formation And Underfill](#24---flip-chip-assembly---bump-formation-and-underfill)<br>5. [Wafer Level Packaging And Conclusion](#25---wafer-level-packaging-and-conclusion) | <img width="94" height="20" alt="image" src="https://github.com/user-attachments/assets/9768417d-9351-4e4d-b293-5d0490a1225c" /> |
 | [Module 3](#3---labs-thermal-simulation-of-semiconductor-packages-with-ansys-tools) | **Labs: Thermal Simulation of Semiconductor Packages with ANSYS**<br>1. [Introduction And Getting Started With ANSYS Electronics Desktop](#31---introduction-and-getting-started-with-ansys-electronics-desktop)<br>2. [Setting Up A Flip-Chip BGA Package](#32---setting-up-a-flip-chip-bga-package)<br>3. [Material Definitions And Thermal Power Sources](#33---material-definitions-and-thermal-power-sources)<br>4. [Meshing And Running The Thermal Analysis](#34---meshing-and-running-the-thermal-analysis)<br>5. [Viewing Results And Exploring Other Package Types](#35---viewing-results-and-exploring-other-package-types) | <img width="94" height="20" alt="image" src="https://github.com/user-attachments/assets/9768417d-9351-4e4d-b293-5d0490a1225c" /> |
 | [Module 4](#4---ensuring-package-reliability-testing-and-performance-validation) | **Ensuring Package Reliability: Testing and Performance Validation**<br>1. [Introduction to Package Testing and Electrical Functionality Checks](#41---introduction-to-package-testing-and-electrical-functionality-checks)<br>2. [Reliability and Performance Testing of Semiconductor Packages](#42---reliability-and-performance-testing-of-semiconductor-packages) | <img width="94" height="20" alt="image" src="https://github.com/user-attachments/assets/9768417d-9351-4e4d-b293-5d0490a1225c" /> |
-| [Module 5](#5---package-design-and-modeling-building-a-semiconductor-package-from-scratch) | **Package Design and Modeling: Building a Semiconductor Package from Scratch**<br>1. [Introduction to Package Cross - Section Modeling in ANSYS Electronics Desktop (AEDT)](#51---introduction-to-package-cross---section-modeling-in-ansys-electronics-desktop-aedt)<br>2. [Creating the Die and Substrate in AEDT](#52---creating-the-die-and-substrate-in-aedt)<br>3. [Adding Die Attach Material and Bond Pads](#53---adding-die-attach-material-and-bond-pads)<br>4. [Wire Bond Creation and Material Assignment](#54---wire-bond-creation-and-material-assignment)<br>5. [Adding Die Attach Material and Bond Pads](#53---adding-die-attach-material-and-bond-pads) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 25%</span> | 
+| [Module 5](#5---package-design-and-modeling-building-a-semiconductor-package-from-scratch) | **Package Design and Modeling: Building a Semiconductor Package from Scratch**<br>1. [Introduction to Package Cross - Section Modeling in ANSYS Electronics Desktop (AEDT)](#51---introduction-to-package-cross---section-modeling-in-ansys-electronics-desktop-aedt)<br>2. [Creating the Die and Substrate in AEDT](#52---creating-the-die-and-substrate-in-aedt)<br>3. [Adding Die Attach Material and Bond Pads](#53---adding-die-attach-material-and-bond-pads)<br>4. [Wire Bond Creation and Material Assignment](#54---wire-bond-creation-and-material-assignment)<br>5. [Applying Mold Compound and Finalizing the Package Model](#53---adding-die-attach-material-and-bond-pads) | <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">Done</span> <span style="background-color:#27ae60;color:white;padding:2px 8px;border-radius:6px;">██████████ 25%</span> | 
 
 ---
 Adding Die Attach Material and Bond Pads
@@ -1014,11 +1014,22 @@ Set the substrate bond pad thickness to 10 microns (0.010mm)<br><br>
 
 Use the Bondwire tool under: Draw -> Bondwire
 
-Connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad. It might be easier to draw the wires from the Top view orientation.
+Connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad. It might be easier to draw the wires from the Top view orientation.<br><br>
 
-Select the Bondwire type as JEDEC 4-point
+<img width="1920" height="1020" alt="Lab2_Package modelling_4 1" src="https://github.com/user-attachments/assets/e9162281-403e-45b9-b9fd-d0abf35ecec9" /><br><br>
 
-Assign gold as the Bondwire material
+Select the Bondwire type as JEDEC 4-point<br><br>
+
+<img width="1920" height="1020" alt="Lab2_Package modelling_4 2" src="https://github.com/user-attachments/assets/9483729e-02d4-4e4f-b363-b0d162400350" /><br><br>
+
+Assign gold as the Bondwire material<br><br>
+
+<img width="1903" height="1012" alt="Lab2_Package modelling_4 3" src="https://github.com/user-attachments/assets/8b28841c-20a5-4d2e-bee7-a7b2bb0c5aae" /><br><br>
+
+Now, repeat the steps 6 and 7 to create and connect all the die and substrate bond pads using bondwires.
+
+### 5.5 - Applying Mold Compound and Finalizing the Package Model
+
 
 
 
