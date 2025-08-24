@@ -2,7 +2,7 @@
 
 This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
-??????Imtroduction????
+The workshop offers a full-pipeline understanding of the semiconductor packaging process, starting from the fundamentals and evolution of packaging to advanced 2.5D/3D architectures. We gain insights into advanced interconnect technologies, RDLs & interposers, assembly processes, package reliability analysis, and also get to perform hands-on thermal simulations, package design and modeling using ANSYS tools.
 
 ## Table of Contents
 
@@ -14,10 +14,15 @@ This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundam
 | [Module 4](#4---ensuring-package-reliability-testing-and-performance-validation) | **Ensuring Package Reliability: Testing and Performance Validation**<br>1. [Introduction to Package Testing and Electrical Functionality Checks](#41---introduction-to-package-testing-and-electrical-functionality-checks)<br>2. [Reliability and Performance Testing of Semiconductor Packages](#42---reliability-and-performance-testing-of-semiconductor-packages) | <img width="94" height="20" alt="image" src="https://github.com/user-attachments/assets/9768417d-9351-4e4d-b293-5d0490a1225c" /> |
 | [Module 5](#5---package-design-and-modeling-building-a-semiconductor-package-from-scratch) | **Package Design and Modeling: Building a Semiconductor Package from Scratch**<br>1. [Introduction to Package Cross - Section Modeling in ANSYS Electronics Desktop (AEDT)](#51---introduction-to-package-cross---section-modeling-in-ansys-electronics-desktop-aedt)<br>2. [Creating the Die and Substrate in AEDT](#52---creating-the-die-and-substrate-in-aedt)<br>3. [Adding Die Attach Material and Bond Pads](#53---adding-die-attach-material-and-bond-pads)<br>4. [Wire Bond Creation and Material Assignment](#54---wire-bond-creation-and-material-assignment)<br>5. [Applying Mold Compound and Finalizing the Package Model](#55---applying-mold-compound-and-finalizing-the-package-model) | <img width="94" height="20" alt="image" src="https://github.com/user-attachments/assets/9768417d-9351-4e4d-b293-5d0490a1225c" /> |
 ---
-Adding Die Attach Material and Bond Pads
-## Module 1. Packaging Evolution: From Basics to 3D Integration
 
-??????Description????
+## Module 1. Packaging Evolution: From Basics to 3D Integration<br><br>
+Semiconductor packaging refers to the final stage of semiconductor device fabrication, where the finished semiconductor die is enclosed in a protective package that allows it to be integrated into electronic systems. Basically, the package helps transition a fragile silicon die fabricated in a foundry cleanroom into the real-world system/ product.
+
+The key Functions of semiconductor package are:
+Protection from external environmental (physical/ mechanical damage, humidity, corrosion/ contaminants & chemical damage and ESD)
+Electrical connectivity between the die and the external environment via leads (pins, balls or lands)
+Mechanical support and connection of the die to the system
+Thermal dissipation to conduct heat away from the die
 
 ### 1.1 - Introduction To Semiconductor Packaging And Industry Overview <br><br>
 
