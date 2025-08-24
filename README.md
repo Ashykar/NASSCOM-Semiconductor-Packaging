@@ -1047,23 +1047,3 @@ Set the thickness to 1.2mm so that it covers the die and the bondwires, while al
 <img width="1920" height="1020" alt="Lab2_Package modelling_5 2" src="https://github.com/user-attachments/assets/e9d4de38-ac2e-4b78-95ec-9aca36444623" /><br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_5 3" src="https://github.com/user-attachments/assets/7d73d76a-51b6-4dd4-985a-73076a7533de" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
