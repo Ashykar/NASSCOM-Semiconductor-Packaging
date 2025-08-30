@@ -146,7 +146,7 @@ Options for Interconnections:
 
 * Wirebond: Thin wires (e.g., gold or copper) using curved connections connecting the die to the carrier, as shown in the detailed inset.
 
-* Bump/Solder: Solder balls or bumps (e.g., in flip-chip or BGA packages) using direct vertical links, for direct die-to-carrier or carrier-to-board connections, also depicted in the inset with epoxy underfill    for stability and structural integrity.
+* Bump/Solder: Solder balls or bumps (e.g., in flip-chip or BGA packages) using direct vertical links, for direct die-to-carrier or carrier-to-board connections, also depicted in the inset with epoxy underfill   for stability and structural integrity.
 
 
 Package Types
@@ -457,15 +457,15 @@ Step-by-Step Breakdown
 
 1. Incoming Wafer Carrier: A stack of wafers arrive in sealed carriers (e.g., FOUPs or cassettes) to protect them from contamination during transport.
    
-2. Wafer Inspection: The wafer is visually and automatically inspected for defects, cracks, or contamination using tools like optical microscopes or automated scanners. This ensures only viable wafers proceed,     maximizing efficiency.
+2. Wafer Inspection: The wafer is visually and automatically inspected for defects, cracks, or contamination using tools like optical microscopes or automated scanners. This ensures only viable wafers proceed,    maximizing efficiency.
 
-3. Wafer Front Tape Lamination: A protective tape is laminated onto the front (active) side of the wafer. This tape acts as a barrier to safeguard the circuit patterns and delicate structures from mechanical       damage, debris, or chemicals during subsequent aggressive processes like grinding and dicing. Without it, the front side could be scratched or contaminated, leading to die failure and reduced yield.
+3. Wafer Front Tape Lamination: A protective tape is laminated onto the front (active) side of the wafer. This tape acts as a barrier to safeguard the circuit patterns and delicate structures from mechanical      damage, debris, or chemicals during subsequent aggressive processes like grinding and dicing. Without it, the front side could be scratched or contaminated, leading to die failure and reduced yield.
 
-4. Two-Step Wafer Dicing (Laser Grooving + Blade Dicing): The wafer is cut into individual dies using a hybrid method: first, laser grooving creates precise shallow cuts, followed by mechanical blade dicing to     complete the separation. Modern wafers have thin, brittle layers and low-k dielectrics that are prone to chipping or cracking with traditional blade dicing alone. The two-step approach minimizes edge damage     laser grooving provides clean, narrow kerfs (cuts) without physical contact, while blade dicing ensures full separation. This is essential for high-density chips to maintain structural integrity and             electrical performance.
+4. Two-Step Wafer Dicing (Laser Grooving + Blade Dicing): The wafer is cut into individual dies using a hybrid method: first, laser grooving creates precise shallow cuts, followed by mechanical blade dicing to    complete the separation. Modern wafers have thin, brittle layers and low-k dielectrics that are prone to chipping or cracking with traditional blade dicing alone. The two-step approach minimizes edge damage    laser grooving provides clean, narrow kerfs (cuts) without physical contact, while blade dicing ensures full separation. This is essential for high-density chips to maintain structural integrity and            electrical performance.
 
-5. Tape Frame Mounting to Wafer Backside: The wafer's backside is mounted onto a dicing tape within a metal or plastic frame (ring frame). After initial preparation (e.g., lamination), this mounting provides       mechanical support and stability for the wafer during dicing and handling. It holds the dies in place post-dicing, preventing them from scattering, and facilitates easy transfer to pick-and-place tools for      assembly. Without this, thin wafers could warp or break, complicating automation and increasing defects.
+5. Tape Frame Mounting to Wafer Backside: The wafer's backside is mounted onto a dicing tape within a metal or plastic frame (ring frame). After initial preparation (e.g., lamination), this mounting provides      mechanical support and stability for the wafer during dicing and handling. It holds the dies in place post-dicing, preventing them from scattering, and facilitates easy transfer to pick-and-place tools for     assembly. Without this, thin wafers could warp or break, complicating automation and increasing defects.
 
-6. Wafer Backside Grinding: The backside of the wafer is ground down using a spinning wheel and chuck table, with feeding direction and spindle. Wafers start thick (e.g., 775 μm) for stability during front-end     fabrication but must be thinned (to 50-200 μm) for compact packaging, better heat dissipation, and 3D stacking in advanced devices. Grinding removes excess silicon, but without prior front-side protection       (from lamination) or mounting, it could cause warping, cracking, or contamination.
+6. Wafer Backside Grinding: The backside of the wafer is ground down using a spinning wheel and chuck table, with feeding direction and spindle. Wafers start thick (e.g., 775 μm) for stability during front-end    fabrication but must be thinned (to 50-200 μm) for compact packaging, better heat dissipation, and 3D stacking in advanced devices. Grinding removes excess silicon, but without prior front-side protection      (from lamination) or mounting, it could cause warping, cracking, or contamination.
 
    
 ### 2.3 - Wire Bond Packaging - Die Attach To Molding
@@ -476,18 +476,18 @@ The wire bond packaging process, a widely used technique in semiconductor packag
 
 Wire Bond Packaging Process:
 
-1. Die Attach: The silicon die, separated from the wafer, is attached to a substrate (e.g., leadframe or laminate) or a die pad using an adhesive material, such as epoxy. The die being placed onto a substrate      with a dispensing nozzle applying adhesive. This step provides mechanical stability and a thermal/electrical pathway between the die and the package. A secure attachment prevents movement during subsequent      processes (e.g., wire bonding, molding), ensures efficient heat dissipation, and, in some cases, establishes a ground connection if a conductive adhesive is used. Without proper die attach, the die could        shift, leading to misalignment or electrical failure.
+1. Die Attach: The silicon die, separated from the wafer, is attached to a substrate (e.g., leadframe or laminate) or a die pad using an adhesive material, such as epoxy. The die being placed onto a substrate     with a dispensing nozzle applying adhesive. This step provides mechanical stability and a thermal/electrical pathway between the die and the package. A secure attachment prevents movement during subsequent     processes (e.g., wire bonding, molding), ensures efficient heat dissipation, and, in some cases, establishes a ground connection if a conductive adhesive is used. Without proper die attach, the die could       shift, leading to misalignment or electrical failure.
 
 2. Curing: The die-attached unit is subjected to a heating process to cure the epoxy, ensuring a strong and stable bond between the die and the substrate.
 
-3. Wire Bonding (Starting with Free Air Ball): Wire bonding connects the die's bond pads to the substrate or leadframe using thin wires (typically gold, copper, or aluminum). The process begins with the            formation of a free air ball (FAB). A fine wire is fed through a capillary tool, and a high-voltage electric arc melts the wire tip to form a spherical FAB. The FAB is pressed onto the die's bond pad under      heat and ultrasonic energy, creating a metallurgical bond (e.g., ball bond). The capillary then moves to the substrate, forming a wedge bond or stitch bond, and the wire is cut, completing the connection.
-   Wire bonding establishes electrical interconnections between the die and the external circuit, enabling signal and power transmission. Starting with a FAB ensures a strong, reliable initial bond due to its      uniform shape, which maximizes contact area and adhesion strength. This step is critical for packages like QFN, DIP, or PBGA, where high-density connections are needed without compromising signal integrity.
+3. Wire Bonding (Starting with Free Air Ball): Wire bonding connects the die's bond pads to the substrate or leadframe using thin wires (typically gold, copper, or aluminum). The process begins with the           formation of a free air ball (FAB). A fine wire is fed through a capillary tool, and a high-voltage electric arc melts the wire tip to form a spherical FAB. The FAB is pressed onto the die's bond pad under     heat and ultrasonic energy, creating a metallurgical bond (e.g., ball bond). The capillary then moves to the substrate, forming a wedge bond or stitch bond, and the wire is cut, completing the connection.
+   Wire bonding establishes electrical interconnections between the die and the external circuit, enabling signal and power transmission. Starting with a FAB ensures a strong, reliable initial bond due to its     uniform shape, which maximizes contact area and adhesion strength. This step is critical for packages like QFN, DIP, or PBGA, where high-density connections are needed without compromising signal integrity.
 
-4. Molding: The assembled die, wire bonds, and substrate are encapsulated with a mold compound (e.g., epoxy resin) using a transfer molding machine. Molding protects the die and wire bonds from environmental       factors such as moisture, dust, mechanical stress, and thermal shock. It also provides structural integrity, preventing wire sweep or die damage during handling or operation. Without molding, the delicate       internal components would be vulnerable, reducing the package's reliability and lifespan.
+4. Molding: The assembled die, wire bonds, and substrate are encapsulated with a mold compound (e.g., epoxy resin) using a transfer molding machine. Molding protects the die and wire bonds from environmental      factors such as moisture, dust, mechanical stress, and thermal shock. It also provides structural integrity, preventing wire sweep or die damage during handling or operation. Without molding, the delicate      internal components would be vulnerable, reducing the package's reliability and lifespan.
 
-5. Marking: It involves applying identification details to the molded package using techniques like laser etching, ink printing, or stamping. The information such as part numbers, manufacturer logos, batch         codes, or date codes is imprented on the top surface of the package after molding. Marking allows tracking of the IC through the supply chain, aiding in quality control, warranty claims, and recalls if          defects are identified. It provides critical information for assembly lines, customers, and end-users to distinguish between different IC types or versions. Manufacturer logos or codes enhance brand             recognition and authenticity. Without marking, it would be challenging to manage inventory or ensure the correct IC is used in specific applications, potentially leading to errors or counterfeit issues.
+5. Marking: It involves applying identification details to the molded package using techniques like laser etching, ink printing, or stamping. The information such as part numbers, manufacturer logos, batch        codes, or date codes is imprented on the top surface of the package after molding. Marking allows tracking of the IC through the supply chain, aiding in quality control, warranty claims, and recalls if         defects are identified. It provides critical information for assembly lines, customers, and end-users to distinguish between different IC types or versions. Manufacturer logos or codes enhance brand            recognition and authenticity. Without marking, it would be challenging to manage inventory or ensure the correct IC is used in specific applications, potentially leading to errors or counterfeit issues.
 
-6. Singulation (Dicing Blade): Singulation separates individual packaged ICs from a panel or strip (e.g., a leadframe or substrate array) into standalone units. The sawing or punching machine cuts through the      molded panel along pre-defined scribe lines. These techniques are chosen based on package type (e.g., QFN, BGA) and material.
+6. Singulation (Dicing Blade): Singulation separates individual packaged ICs from a panel or strip (e.g., a leadframe or substrate array) into standalone units. The sawing or punching machine cuts through the     molded panel along pre-defined scribe lines. These techniques are chosen based on package type (e.g., QFN, BGA) and material.
    
 ### 2.4 - Flip Chip Assembly - Bump Formation And Underfill<br><br>
 
@@ -497,25 +497,25 @@ The flip-chip packaging process, a sophisticated back-end semiconductor manufact
 
 Flip-Chip Packaging Process
 
-1. Bump Formation on Silicon: Solder bumps or copper pillars are created on the active side of the silicon die at the bond pad locations. This involves applying an under-bump metallurgy (UBM) layer followed by     solder deposition . Bumps provide electrical and mechanical connections when the die is flipped onto the substrate, enabling high pin counts and short signal paths for improved performance and reduced           inductance.
+1. Bump Formation on Silicon: Solder bumps or copper pillars are created on the active side of the silicon die at the bond pad locations. This involves applying an under-bump metallurgy (UBM) layer followed by    solder deposition . Bumps provide electrical and mechanical connections when the die is flipped onto the substrate, enabling high pin counts and short signal paths for improved performance and reduced          inductance.
 
-2. Chip Flip and Placement: The bumped die is inverted and precisely aligned with matching pads on the substrate (e.g., laminate or interposer). A pick-and-place machine positions the die, ensuring accurate        alignment before bonding. Flipping and placing the die face-down maximizes I/O density and thermal efficiency. Proper alignment prevents electrical shorts or open connections, critical for the subsequent        reflow process.
+2. Chip Flip and Placement: The bumped die is inverted and precisely aligned with matching pads on the substrate (e.g., laminate or interposer). A pick-and-place machine positions the die, ensuring accurate       alignment before bonding. Flipping and placing the die face-down maximizes I/O density and thermal efficiency. Proper alignment prevents electrical shorts or open connections, critical for the subsequent       reflow process.
 
-3. Flux Dispensing: A small amount of flux is dispensed using a dispensing tool onto the substrate pads or die bumps to remove oxides and improve solder wetting during reflow. Flux ensures a clean surface for      solder bonding, enhancing the strength and reliability of the connections by preventing oxidation and promoting uniform solder flow.
+3. Flux Dispensing: A small amount of flux is dispensed using a dispensing tool onto the substrate pads or die bumps to remove oxides and improve solder wetting during reflow. Flux ensures a clean surface for     solder bonding, enhancing the strength and reliability of the connections by preventing oxidation and promoting uniform solder flow.
 
-4. Solder Reflow: The assembly is heated in a reflow oven (e.g., 220-250°C) to melt the solder bumps, forming metallurgical bonds between the die and substrate. Reflow solidifies the electrical and mechanical      connections, locking the die to the substrate. This step is essential for establishing a robust interconnect network.
+4. Solder Reflow: The assembly is heated in a reflow oven (e.g., 220-250°C) to melt the solder bumps, forming metallurgical bonds between the die and substrate. Reflow solidifies the electrical and mechanical     connections, locking the die to the substrate. This step is essential for establishing a robust interconnect network.
 
-5. Flux Cleansing: Residual flux is removed using a cleaning agent (e.g., deionized water or solvent) to prevent corrosion or contamination. The cleaning station or rinse process eliminates flux residues that      could degrade long-term reliability by causing electrical leakage or chemical reactions, ensuring the package's durability.
+5. Flux Cleansing: Residual flux is removed using a cleaning agent (e.g., deionized water or solvent) to prevent corrosion or contamination. The cleaning station or rinse process eliminates flux residues that     could degrade long-term reliability by causing electrical leakage or chemical reactions, ensuring the package's durability.
 
-6. Underfill Dispensing: Liquid epoxy underfill is applied along the die edges, flowing beneath via capillary action to fill the gap between the die and substrate. Underfill reinforces the structure,               compensating for thermal expansion mismatches and protecting bumps from mechanical stress or moisture ingress using a nozzle dispensing underfill.
+6. Underfill Dispensing: Liquid epoxy underfill is applied along the die edges, flowing beneath via capillary action to fill the gap between the die and substrate. Underfill reinforces the structure,              compensating for thermal expansion mismatches and protecting bumps from mechanical stress or moisture ingress using a nozzle dispensing underfill.
 
-7. Underfill Cure: The underfill is cured with heat (e.g., 100-150°C) in an oven to harden into a solid polymer. Curing stabilizes the underfill, securing the die and enhancing reliability by preventing            movement or degradation under operational conditions.
+7. Underfill Cure: The underfill is cured with heat (e.g., 100-150°C) in an oven to harden into a solid polymer. Curing stabilizes the underfill, securing the die and enhancing reliability by preventing           movement or degradation under operational conditions.
 
-8. Molding: The entire assembly is encapsulated with a mold compound (e.g., epoxy resin) using a transfer molding machine to protect the die, bumps, and underfill. Molding shields the internal components from      environmental factors like humidity, dust, and mechanical shock, ensuring long-term functionality and robustness.
+8. Molding: The entire assembly is encapsulated with a mold compound (e.g., epoxy resin) using a transfer molding machine to protect the die, bumps, and underfill. Molding shields the internal components from     environmental factors like humidity, dust, and mechanical shock, ensuring long-term functionality and robustness.
 
-9. Marking: Identification details (e.g., part number, logo, batch code) are etched onto the molded package using laser marking or ink printing. Marking enables traceability, identification, and branding,          facilitating quality control and supply chain management.
+9. Marking: Identification details (e.g., part number, logo, batch code) are etched onto the molded package using laser marking or ink printing. Marking enables traceability, identification, and branding,         facilitating quality control and supply chain management.
 
-10. Ball Mounting and Reflow on Substrate: Solder balls are placed on the substrate’s bottom pads (for BGA packages), and the assembly is heated in a reflow oven to bond the balls, completing the package-to-        board interface. Ball mounting and reflow create the external connections for surface-mounting the package onto a PCB, ensuring reliable electrical and mechanical attachment for final integration.
+10. Ball Mounting and Reflow on Substrate: Solder balls are placed on the substrate’s bottom pads (for BGA packages), and the assembly is heated in a reflow oven to bond the balls, completing the package-to-       board interface. Ball mounting and reflow create the external connections for surface-mounting the package onto a PCB, ensuring reliable electrical and mechanical attachment for final integration.
 
 ### 2.5 - Wafer Level Packaging And Conclusion
 
@@ -526,20 +526,19 @@ Wafer Level Packaging (WLP), a cutting-edge semiconductor packaging technique th
 Types of WLP
 
 * Fan-in WLP (FI-WLP): Interconnects are confined within the die area, limiting I/O count but ideal for compact, low-pin-count devices.
-
 * Fan-out WLP (FO-WLP): Extends interconnects beyond the die area onto the package, enabling higher I/O counts and supporting complex chips like CPUs or GPUs.
 
 FO-WLP Process: Fan-out Wafer Level Packaging involves embedding known good dies into a reconstituted wafer, followed by redistribution and interconnection. FO-WLP allows for larger effective die areas and more I/O connections, accommodating advanced multi-chip designs and improving yield by using only tested dies.
 
-1. Reconstitution Process: Individual dies (after wafer dicing) are placed face-up on a temporary carrier (e.g., glass or tape) with a gap between them. The carrier is then overmolded with an epoxy mold            compound to form a reconstituted wafer, embedding the dies. Reconstitution creates a uniform wafer-like structure from disparate dies, enabling wafer-level processing. This step is essential for FO-WLP to       expand the interconnect area and support high-density packaging.
+1. Reconstitution Process: Individual dies (after wafer dicing) are placed face-up on a temporary carrier (e.g., glass or tape) with a gap between them. The carrier is then overmolded with an epoxy mold           compound to form a reconstituted wafer, embedding the dies. Reconstitution creates a uniform wafer-like structure from disparate dies, enabling wafer-level processing. This step is essential for FO-WLP to      expand the interconnect area and support high-density packaging.
 
-2. RDL (Redistribution Layer) Preparation: A redistribution layer is fabricated on the reconstituted wafer to reroute the die’s bond pads to desired locations for external connections. This involves depositing     dielectric layers, patterning metal traces (e.g., copper), and via formation. RDL allows flexible pad placement, accommodating solder balls or other interconnects outside the original die footprint. It is       critical for fan-out designs, enhancing I/O density and electrical performance.
+2. RDL (Redistribution Layer) Preparation: A redistribution layer is fabricated on the reconstituted wafer to reroute the die’s bond pads to desired locations for external connections. This involves depositing    dielectric layers, patterning metal traces (e.g., copper), and via formation. RDL allows flexible pad placement, accommodating solder balls or other interconnects outside the original die footprint. It is      critical for fan-out designs, enhancing I/O density and electrical performance.
 
-3. Solder Ball Attach: Solder balls are placed and reflowed onto the RDL pads to form the external connections (e.g., for BGA packages). Solder balls provide the mechanical and electrical interface for mounting    the package onto a PCB, ensuring reliable connectivity and supporting surface-mount technology.
+3. Solder Ball Attach: Solder balls are placed and reflowed onto the RDL pads to form the external connections (e.g., for BGA packages). Solder balls provide the mechanical and electrical interface for            mounting the package onto a PCB, ensuring reliable connectivity and supporting surface-mount technology.
 
-4. Final Laser Marking: Identification details (e.g., part number, logo, batch code) are etched onto the package surface using a laser marking system after molding and ball attach. Marking enables traceability,    identification, and branding, crucial for quality control and supply chain management after the wafer-level processes are complete.
+4. Final Laser Marking: Identification details (e.g., part number, logo, batch code) are etched onto the package surface using a laser marking system after molding and ball attach. Marking enables                 traceability,    identification, and branding, crucial for quality control and supply chain management after the wafer-level processes are complete.
 
-5. Singulation: The reconstituted wafer is diced into individual packages using a saw or laser along pre-defined scribe lines. Singulation separates the packaged dies into standalone units, allowing them to be     picked and placed onto PCBs or shipped. This final step completes the WLP process, transforming the wafer into marketable ICs.
+5. Singulation: The reconstituted wafer is diced into individual packages using a saw or laser along pre-defined scribe lines. Singulation separates the packaged dies into standalone units, allowing them to be    picked and placed onto PCBs or shipped. This final step completes the WLP process, transforming the wafer into marketable ICs.
 
 ***
 
@@ -551,9 +550,9 @@ ANSYS Electronics Desktop, a comprehensive simulation software suite widely used
 
 ### 3.2 - Setting Up A Flip-Chip BGA Package
 
-We will be taking an already available FC-BGA package within the Icepak Toolkit for this simulation exercise.
+We will analyzing an already available pre-loaded FC-BGA package within the Icepak Tool for the following simulation exercise.
 
-Step 1 : Open AEDT and launch Icepak<br><br>
+Step 1 : Launch AEDT and open Icepak<br><br>
 
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_1" src="https://github.com/user-attachments/assets/4192dc88-ca91-4304-af89-a323c3a8d32d" /><br><br>
 
@@ -571,17 +570,21 @@ Core Components
 
 * Circuit Simulator: Integrates with schematic tools to perform time-domain and frequency-domain analyses, linking EM models with circuit behavior.
 
-Step 2.1 : Create a Flipchip BGA Package
+Step 2.1 : Create a Flipchip BGA Package as shown
 
-Icepak -> Toolkit -> Geometry -> Packages -> Flipchip_BGA<br><br>
+Icepak -> 
+         Toolkit -> 
+                   Geometry -> 
+                               Packages -> 
+                                          Flipchip_BGA<br><br>
 
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_2" src="https://github.com/user-attachments/assets/7790d44c-9de3-4bd2-ae21-c216dde688e2" /><br><br>
 
-Step 2.2 : The Package Configuration window opens 
+Step 2.2 : The Package Configuration window pops up 
 
-The dimensions and other aspects of the package, substrate, die, die underfill and the solder balls can be configured here.
+Configure the dimensions and other aspects of the package, substrate, die, die underfill and the solder balls.
 
-Once configured, click OK to generate the package model.<br><br>
+After configuration, click OK to generate the package model.<br><br>
 
 <img width="1023" height="560" alt="Lab1_FCBGA_ThermalSim_3 1" src="https://github.com/user-attachments/assets/914e36f6-9e22-4361-84c2-b58da394bf8d" /><br><br>
 
@@ -596,7 +599,7 @@ Package generated in Icepak<br><br>
 
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_4" src="https://github.com/user-attachments/assets/f0ad08ab-e9bf-4fff-9c3e-923390dd122a" /><br><br>
 
-Step 3 : Explore the 3D Package Model Structure in Icepak
+Step 3 : Explore the Package Model 3D Structure in Icepak
 
 Ball group<br><br>
 
@@ -615,30 +618,29 @@ Die<br><br>
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_5 4" src="https://github.com/user-attachments/assets/c3d5670c-b530-4c6f-a89a-5b6c23ed10c5" /><br><br>
 
 
-
 ### 3.3 - Material Definitions And Thermal Power Sources
 
-Step 4 : Review and modify the material and definition types for the different components of the model.
+Step 4 : Modify the material and definition types for the different components of the model.
 
 Material Definitions<br><br>
 
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_6" src="https://github.com/user-attachments/assets/b43d0b4e-29cc-4bac-8d17-bd0c7d49ad1f" /><br><br>
 
-Step 5.1 : Add/ Assign Source Thermal Model for Die
+Step 5.1 : Assign Source Thermal Model for Die
 
-In "Project Manager" sub-window, expand Thermal section and open the BGA1_die_source and configure the thermal condition as shown below:
+In "Project Manager" window pane, expand Thermal section, open the BGA1_die_source and configure the parameters as shown below:
 
-Source Thermal Model for Die<br><br>
+Source Thermal Model configuration for the Die<br><br>
 
 <img width="1920" height="1080" alt="Lab1_FCBGA_ThermalSim_6 1" src="https://github.com/user-attachments/assets/db6edeab-e95f-4d21-9895-2ea51949a30e" /><br><br>
 
-Step 5.2 : Add/ Assign Source Thermal Model for Substrate
+Step 5.2 : Assign Source Thermal Model for Substrate
 
-To add a thermal boundary condition for the substrate, right click on Flipchip_BGA1_substrate under Models -> Flipchip_BGA1_Group -> Solids and assign a Thermal Source.<br><br>
+To add a boundary condition for the thermal model of a substrate, right click on Flipchip_BGA1_substrate under Models -> Flipchip_BGA1_Group -> Solids and assign a Thermal Source.<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 2" src="https://github.com/user-attachments/assets/484be3af-ad14-4cd6-9cea-20ba1877f6ec" /><br><br>
 
-Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.<br><br>
+Set the condition to Fixed Temperatue and the temperature as Ambient.<br><br>
 
 <img width="1920" height="1025" alt="Lab1_FCBGA_ThermalSim_6 3" src="https://github.com/user-attachments/assets/e54c5ff7-11b9-412c-9cd8-22eb30f5fbd1" /><br><br>
 
@@ -648,33 +650,31 @@ To add a Thermal monitor to the substrate, right click on the Flipchip_BGA1_subs
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 4" src="https://github.com/user-attachments/assets/888be3f8-869e-410b-b80b-d876d64f5585" /><br><br>
 
-In the sub-window that appears, select Temperature<br><br>
+In the pop-up window that appears, tick the box Temperature<br><br>
 
 <img width="332" height="522" alt="Lab1_FCBGA_ThermalSim_6 5" src="https://github.com/user-attachments/assets/d732b8a9-105b-485c-a29e-85106257aa68" /><br><br>
 
-
 Repeat the same to add thermal monitors for the die and the die-underfill.
 .
-Thermal monitors added<br><br>
+Added thermal monitors<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_6 6" src="https://github.com/user-attachments/assets/819e777a-ffa2-4991-b2ea-70d8ca24c8b5" /><br><br>
-
 
 ### 3.4 - Meshing And Running The Thermal Analysis
 
 Step 7.1 : Generate Mesh
 
-Go to the Simulation tab and click on Generate Mesh<br><br>
+Proceed to the Simulation tab and click on Generate Mesh<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_7" src="https://github.com/user-attachments/assets/3c260a8a-ca70-4cac-b59b-52fa6b37c430" /><br><br>
 
-Save the project if prompted and wait for the mesh generation to get completed.
+Save the project when prompted and it takes few seconds to generate the mesh.
 
-Take a note of any error(s) and warning(s) that are shown and ignore/ take steps to debug & fix the issue(s) as required.
+Note any error(s) and warning(s) shown and ignore/ take steps to debug and fix the issue(s) as required.
 
-Step 7.2 : Review Mesh Quality metrics
+Step 7.2 : Review the Quality metrics for the mesh generated
 
-Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.<br><br>
+Review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_7 1" src="https://github.com/user-attachments/assets/fd465888-7ae2-431f-a8a3-6ff2ae661d0a" /><br><br>
 
@@ -691,35 +691,35 @@ Mesh Quality - Volume<br><br>
 <img width="583" height="902" alt="Lab1_FCBGA_ThermalSim_7 4" src="https://github.com/user-attachments/assets/b0ccf082-3a7e-4878-9ca7-b2447621fb4a" /><br><br>
 
 
-Step 8 : Add Thermal Analysis
+Step 8 : Set-up Thermal Analysis
 
-Under Project Manager, right click on Analysis and then, select Add Analysis Setup and configure the solver settings as required. (We will choose all default settings for our analysis)
+Under Project Manager, right click on Analysis -> select Add Analysis Setup and configure the Icepak solve as required. (Keep the default configuration settings for the analysis)
 
-Add Analysis Setup<br><br>
+Analysis Setup<br><br>
 
 <img width="666" height="812" alt="Lab1_FCBGA_ThermalSim_7 5" src="https://github.com/user-attachments/assets/837c5d97-58f2-434a-8eb7-33cd24c8f8d3" /><br><br>
 
 ### 3.5 - Viewing Results And Exploring Other Package Types
 
-Step 9 : Now, Validate the Simulation setup
+Step 9 : Validate the Simulation setup
 
-Click on the Validate button in the top ribbon
+Click on the Validate button in the top strip as shown in the screen-shot
 
-Ensure all checks are validated successfully<br><br>
+Check and make sure all checks are validated successfully<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_8" src="https://github.com/user-attachments/assets/20104ea3-fb7e-4b4a-8941-8cccf6cbf9e8" /><br><br>
 
 Step 10: Run the simulation and plot the temperature map
 
-Click on Analyze All button in the top ribbon<br><br>
+Click on Analyze All button in the top strip<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_9" src="https://github.com/user-attachments/assets/6519212a-e922-45e3-8efd-612f05f2d4a7" /> <br><br>
 
-Wait for the simulation to get completed successfully. Take note of any warning(s) or errors that may need further debug or setup modification(s).
+Wait for the simulation to get completed successfully. Note any warning(s) or errors that for further debugging or setup modification(s).
 
-Once the simulation is completed, select the complete FC-BGA package in the 3D view by drawing a selection rectangle using the left-mouse button.
+Once the simulation is done completely, use the left mouse button and select the complete FC-BGA package in the 3D view by drawing rectangle selection tool.
 
-Right click and then select Plot Fields -> Temperature -> Temperature<br><br>
+Now Right click and then select Plot Fields -> Temperature -> Temperature<br><br>
 
 <img width="1920" height="1020" alt="Lab1_FCBGA_ThermalSim_10" src="https://github.com/user-attachments/assets/8cc3ccdf-4a3f-4e33-8bb1-851bcaca95f7" /><br><br>
 
@@ -749,10 +749,9 @@ Field Plot - Bottom view<br><br>
 
 ### 4.1 - Introduction to Package Testing and Electrical Functionality Checks
 
-The process begins with Foundry activities, including Front end manufacturing (e.g., wafer creation) and Wafer probe test to check individual circuits. Next, Wafer sorting assesses wafer quality, followed by Package Manufacturing and OSAT (Outsourced Semiconductor Assembly and Test) for packaging and initial testing. Subsequently, Package Testing ensures packaged components function correctly, and System Level Tests (SLT) verify performance in real-world applications. Throughout these stages, Process development supports improvement, with diagnosis, failure analysis at the base to address issues and refine the process.
+The process begins with Foundry activities, including Front end manufacturing (e.g., wafer creation) and Wafer probe test to check individual circuits. Next, Wafer sorting assesses wafer quality, followed by Package Manufacturing and OSAT (Outsourced Semiconductor Assembly and Test) for packaging and initial testing. Subsequently, Package Testing ensures packaged components function correctly, and System Level Tests (SLT) verify performance in real-world applications. Throughout these stages, Process development supports improvement, with diagnosis, failure analysis at the base to address issues and refine the process.<br><br>
 
-
-![M5_Lecture1](https://github.com/user-attachments/assets/df2d5487-3ddb-4704-962c-a917e7ae6990)
+![M5_Lecture1](https://github.com/user-attachments/assets/9e5c2f1e-fd34-47cd-b43d-38b97d94ea28)
 
 
 #### 4.1.1 - Foundry Testing Stages
