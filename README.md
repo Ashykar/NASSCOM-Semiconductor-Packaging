@@ -986,25 +986,25 @@ NOTE: Assign different shades/ colours to adjacent components to easily distingu
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 4" src="https://github.com/user-attachments/assets/e78026a6-3fd1-4fa0-96c2-2322690a77b2" /><br><br>
 
-#### Step 6 : Create Bond pads on Die and Substrate
+#### Step 6 : Create Bond pads on both the Die and Substrate
 
 Draw a small rectangle and configure its size to to that of the die pad (0.2mm x 0.2mm). 
 
-We will place the first Die Pad at the co-ordinates (0.2, 0.2, 0.2) so that it sits on top of the die and is at one of the edges.<br><br>
+Place the first Die Pad at the co-ordinates (0.2, 0.2, 0.2) so that it sits on top of the die and is at one of the edges.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 5" src="https://github.com/user-attachments/assets/7c3c0eb0-bf45-4078-9429-face590d249e" /><br><br>
 
-Set the thickness to 5 microns (0.005mm)<br><br>
+Adjust the thickness to 5 microns (0.005mm)<br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_3 6" src="https://github.com/user-attachments/assets/95437427-bd8d-47f8-b36c-b25f0bcf7504" /><br><br>
 
-Similarly, draw a small rectangle and configure its size to to that of the substrate bond pad (0.2mm x 0.2mm).
+Similarly, draw a small rectangle and configure its size to that of the substrate bond pad (0.2mm x 0.2mm).
 
-We will place this Substrate Bind Pad at the co-ordinates (0.2, -0.7, -0.1) so that it sits aligned to the Die bond pad created in the previous step, and also on top of the substrate.<br><br>
+Place this Substrate Bond Pad at (0.2, -0.7, -0.1) so that it is aligned to the Die bond pad created in the previous step, and also on top of the substrate.<br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_3 7" src="https://github.com/user-attachments/assets/a0e2b4fd-964b-4536-a382-fa955bb58fca" /><br><br>
 
-Set the substrate bond pad thickness to 10 microns (0.010mm)<br><br>
+Adjust the substrate bond pad thickness to 10 microns (0.010mm)<br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_3 8" src="https://github.com/user-attachments/assets/cdbfe0d4-da85-4845-a17d-619380016eff" /><br><br>
 
@@ -1016,7 +1016,7 @@ Set the substrate bond pad thickness to 10 microns (0.010mm)<br><br>
 
 Use the Bondwire tool under: Draw -> Bondwire
 
-Connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad. It might be easier to draw the wires from the Top view orientation.<br><br>
+Zoom the both pad area and connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad. It might be easier to draw the wires from the Top view orientation.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_4 1" src="https://github.com/user-attachments/assets/e9162281-403e-45b9-b9fd-d0abf35ecec9" /><br><br>
 
@@ -1024,7 +1024,7 @@ Select the Bondwire type as JEDEC 4-point<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_4 2" src="https://github.com/user-attachments/assets/9483729e-02d4-4e4f-b363-b0d162400350" /><br><br>
 
-Assign gold as the Bondwire material<br><br>
+Select gold as the Bondwire material<br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_4 3" src="https://github.com/user-attachments/assets/8b28841c-20a5-4d2e-bee7-a7b2bb0c5aae" /><br><br>
 
@@ -1034,9 +1034,9 @@ Now, repeat the steps 6 and 7 to create and connect all the die and substrate bo
 
 #### Step 8 : Build the mold compound around the die
 
-Create a rectangular enclosure around the die and wires (5mm x 5mm, 1.2mm thickness)
+Create a rectangular enclosure around the die and wires (5mm x 5mm, 1.2mm thickness) using the procedure followed above
 
-Position at (-1, -1, -0.1) covering the top side of the substrate.<br><br>
+Position at (-1, -1, -0.1) such that it covers the top side of the substrate.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_5 1" src="https://github.com/user-attachments/assets/d932f3f2-4784-4346-b618-6de95559ea50" /><br><br>
 
