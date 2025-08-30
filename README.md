@@ -2,7 +2,7 @@
 
 This GitHub repository documents the [NASSCOM - Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 15-24 August, 2025.
 
-The workshop offers a full-pipeline understanding of the semiconductor packaging process, starting from the fundamentals and evolution of packaging to advanced 2.5D/3D architectures. We gain insights into advanced interconnect technologies, RDLs & interposers, assembly processes, package reliability analysis, and also get to perform hands-on thermal simulations, package design and modeling using ANSYS tools.
+The workshop focus on the end-to-end process of semiconductor packaging, from wafer preparation to final testing, centered around the ATMP (Assembly, Testing, Marking, and Packaging) process. The workshop progresses from covering basics, Interposers, Re-Distribution Layers and 2.5D/3D packaging approaches to testing and performance validation of packages. This workshop integrates theoretical knowledge, practical manufacturing stages with advanced simulation-based validation to optimize design, performance, and reliability using ANSYS Electronics Desktop. The content is tailored for the semiconductor industry, addressing modern challenges in miniaturization, high-performance computing, and thermal management. It integrates visual aids and practical examples, ensuring a hands-on learning experience.
 
 ## Table of Contents
 
@@ -16,13 +16,14 @@ The workshop offers a full-pipeline understanding of the semiconductor packaging
 ---
 
 ## Module 1. Packaging Evolution: From Basics to 3D Integration<br><br>
-Semiconductor packaging refers to the final stage of semiconductor device fabrication, where the finished semiconductor die is enclosed in a protective package that allows it to be integrated into electronic systems. Basically, the package helps transition a fragile silicon die fabricated in a foundry cleanroom into the real-world system/ product.
+Semiconductor packaging is a crucial and final stage in the manufacturing of integrated circuits (ICs), where a silicon die—the functional core containing transistors and other components—is encapsulated and interconnected to form a protected, usable module ready for integration into electronic devices like smartphones, computers, or automotive systems. The process is done in a cleanroom environment (e.g., ISO Class 6/7) to prevent contamination.
 
-The key Functions of semiconductor package are:
-Protection from external environmental (physical/ mechanical damage, humidity, corrosion/ contaminants & chemical damage and ESD)
-Electrical connectivity between the die and the external environment via leads (pins, balls or lands)
-Mechanical support and connection of the die to the system
-Thermal dissipation to conduct heat away from the die
+Why Semiconductor packaging?
+* Packaging shields silicon die which is fragile and sensitive to environmental factors such as moisture, dust, humidity, corrosion, mechanical stress, and temperature fluctuations ensuring long-term reliability and preventing physical damage.
+* Packaging provides a means to connect the die's microscopic bond pads to the external world through leads creating a reliable electrical paths for power, signals, and grounding, enabling the IC to function within a circuit.
+* The package provides structural integrity (Mechanical support) , securing the die and allowing handling during assembly onto printed circuit boards (PCBs) without damage.
+* Packaging facilitates heat dissipation through materials and designs preventing overheating and ensuring performance stability.
+* Advanced packaging techniques, enable high-density interconnects and smaller form factors, meeting the demand for compact, powerful devices.
 
 ### 1.1 - Introduction To Semiconductor Packaging And Industry Overview <br><br>
 
@@ -60,7 +61,7 @@ Semiconductor package, its key components and their roles in protecting and conn
 
 <img width="1907" height="1060" alt="image" src="https://github.com/user-attachments/assets/4eadf233-d00f-42ff-a4ae-32d14c5ddfa1" />
 
-Ref: SK Hynix Newsroom: Semiconductor Back-End Process Episode 1
+Ref: [SK Hynix Newsroom: Semiconductor Back-End Process Episode 1](https://news.skhynix.com/semiconductor-back-end-process-episode-1-understanding-semiconductor-testing/)
 
 Overview of the Semiconductor Supply Chain
 
