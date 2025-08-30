@@ -225,9 +225,9 @@ Advanced packages incorporate sophisticated substrates and 3D integration techni
 
 * 2.3D: Uses a silicon interposer to stack dies vertically, enhancing density and performance, mounted on an FCBGA substrate.
 
-* 2.5D: An advanced example like CoWoS (Chip on Wafer on Substrate), featuring a silicon interposer with high-bandwidth memory (HBM), a system-on-chip (SoC), and hybrid bonding, all on a substrate. This is        exemplified by the Nvidia H100 GPU.
+* 2.5D: An advanced example like CoWoS (Chip on Wafer on Substrate), featuring a silicon interposer with high-bandwidth memory (HBM), a system-on-chip (SoC), and hybrid bonding, all on a substrate. This is       exemplified by the Nvidia H100 GPU.
 
-The advanced packaging technologies like CoWoS (Chip on Wafer on Substrate) or similar 2.5D/3D IC designs, as seen in products like the Nvidia H100. The use of an interposer allows for the integration of multiple heterogeneous dies (SoC and HBM) in a compact form factor, optimizing performance for data-intensive applications. The labeled components provide insight into its layered architecture.
+The advanced packaging technologies like CoWoS (Chip on Wafer on Substrate) or similar 2.5D/3D IC designs, as seen in products like the Nvidia H100. The use of an interposer allows for the integration of multiple heterogeneous dies
 
 * SoC (System on Chip): The top layer consists of one or more System on Chip dies. The SoC integrates various functions (e.g., CPU, GPU, memory controllers) onto a single chip, forming the core processing unit of the package.
 
@@ -268,23 +268,30 @@ Optimized layouts can incorporate thermal vias or stress-relief features, improv
 
 #### 1.4.2 - Interposers
 
-An interposer is a passive or active layer inserted between the die and the substrate, acting as an intermediate routing interface. It enables dense signal routing, power delivery, and die-to-die interconnect.
+Interposers are intermediate layers or substrates used in advanced semiconductor packaging to facilitate electrical connections between a silicon die (or multiple dies) and the package substrate or printed circuit board (PCB). They act as a bridge, redistributing and managing the complex interconnects required in high-performance integrated circuits (ICs). Interposers are integral to 2.5D and 3D IC packaging, enabling miniaturization, improved performance, and multi-die integration. 
 
-Types: Silicon, Organic, Glass
+Types of Interposers:
+* Silicon Interposers
+* Glass Interposers
+* Organic Interposers
 
-Functions: Routes signals between multiple dies (e.g., chiplets) - Provides thermal expansion management - Enables high bandwidth communication
+Interposers serve several key roles in semiconductor packaging:
+* Provide a platform to connect multiple dies (e.g., chiplets) or a die to the substrate, managing high-density I/O through fine-pitch routing.
+* Facilitate heat dissipation from stacked or closely packed dies, often with integrated thermal vias or heat spreaders.
+* Distribute power and ground planes to the dies, ensuring stable voltage levels for high-performance operations.<br><br>
 
-Passive vs. Active Interposers
-
-Passive: No logic, just routing and vias
-
-Active: Includes power delivery, clocking, or even memory logic
-
+| Passive Interposers | Active Interposers |
+|----------|------------------|
+| These interposers contain only passive components (e.g., metal traces, vias, capacitors) and serve as a pure interconnect layer without active circuitry | These interposers include active components (e.g., transistors, memory, or logic circuits) integrated into the silicon substrate, often with TSVs |
+| Typical in 2.5D packaging for HBM stacks or multi-chip modules | Used in cutting-edge 3D ICs or heterogeneous integration |<br><br>
 
 #### 1.4.3 - 2.5D/3D Integration
 
-2.5D: Multiple dies (e.g., CPU + HBM) placed side-by-side on a common interposer. Interposer provides connectivity, not the substrate directly. Popular in HPC and AI (e.g., AMD Instinct, NVIDIA GPUs with HBM).
-3D: Dies are stacked vertically, interconnected through Through-Silicon Vias (TSVs). 3D NAND, HBM memory stacks, logic-on-logic stacking.
+2.5D and 3D packaging are advanced semiconductor packaging technologies that enable the integration of multiple dies or chips into a single package, enhancing performance, density, and functionality. These approaches go beyond traditional 2D packaging by stacking or closely packing dies, often using interposers or through-silicon vias (TSVs).
+
+* 2.5D packaging involves placing multiple dies side-by-side on a common interposer, which is then mounted onto a package substrate. The "2.5D" term reflects a hybrid approach—lateral integration with vertical   connectivity via the interposer. This uses a silicon, glass, or organic interposer with TSVs or redistribution layers (RDL) to connect the dies to the substrate. The dies are not stacked but arranged           planarly. e.g., High-bandwidth memory (HBM) stacked with a GPU on a silicon interposer (e.g., Nvidia H100).
+
+* 3D packaging stacks multiple dies vertically, often using TSVs to create direct vertical interconnects between layers, achieving true three-dimensional integration. Dies are bonded (e.g., face-to-face or       face-to-back) and connected through TSVs, with or without an interposer, and encapsulated in a single package. e.g., 3D NAND flash memory or stacked DRAM with a logic die.
 
 The nomenclature progresses from single-chip (e.g., COB) to advanced multi-chip configurations (2D to 3D), reflecting increasing complexity and performance. Advanced packages (2.5D, 3D) leverage interposers and TSVs to integrate diverse components like SoCs and HBM, enabling high-bandwidth applications (e.g., AI, GPUs). The transition from package substrate to PCB underscores the integration into complete electronic systems.
 
@@ -326,20 +333,20 @@ Printed Circuit Board (PCB):
 
 The base layer where the package is mounted, providing electrical and mechanical connectivity to the system.
 
-
 ### 1.5 - Comparative Analysis And Selecting The Right Packaging Solution
 
-The following table provides a comparison of the various IC package types and their typical applications:<br><br>
+Below is a table for selecting the right packaging solution, based on common considerations and the information provided<br><br> 
 
 <img width="1899" height="1046" alt="image" src="https://github.com/user-attachments/assets/7689b8b4-d4e5-4bbf-a9c8-74faf25c7c5d" /><br><br>
 
 Selecting the right semiconductor packaging depends on multiple criteria across performance, reliability, form factor and cost.
+Choosing the appropriate packaging solution for a semiconductor device is a critical decision that impacts performance, cost, reliability, form factor, and manufacturability. This process involves evaluating the specific requirements of the integrated circuit (IC), the target application, and the constraints of the ATMP (Assembly, Testing, Marking, and Packaging) workflow. The selection process leverages advanced technologies and simulation tools like ANSYS Electronics Desktop to optimize outcomes. Options range from wire bond for simplicity to 3D for maximum density, with simulation and testing guiding the choice.
 
 ***
 
 ## 2 - From Wafer to Package: Assembly and Manufacturing Essentials
 
-????Package Manufacturing Introduction????
+Package manufacturing involves a series of steps that encapsulate the silicon die, establish electrical connections, and prepare the IC for integration into electronic systems. It bridges the gap between die fabrication (front-end processing) and system assembly, ensuring the die is protected, functional, and compatible with end-use applications. The process includes assembly techniques (e.g., wire bonding, flip-chip), testing at various stages, marking for identification, and final packaging for shipment, known as the ATMP (Assembly, Testing, Marking, and Packaging) workflow.
 
 ### 2.1 - Setting The Stage - Supply Chain And Facilities
 
@@ -395,9 +402,9 @@ The section provides an overview of a semiconductor package manufacturing unit, 
 
 Key Concepts
 
-* Process: ATMP (Assembly, Testing, Marking, and Packaging): This encompasses the steps to transform bare dies into protected, testable, and ready-to-use chips. It includes die attachment (e.g., bonding),         encapsulation, electrical testing, reliability checks, marking (e.g., laser etching for traceability), and final packaging.
+* Process: ATMP (Assembly, Testing, Marking, and Packaging): This encompasses the steps to transform bare dies into protected, testable, and ready-to-use chips. It includes die attachment (e.g., bonding),        encapsulation, electrical testing, reliability checks, marking (e.g., laser etching for traceability), and final packaging.
 
-* Organization: OSAT (Outsourced Semiconductor Assembly and Test): Specialized companies like ASE, Amkor, or TATA that handle ATMP for fabless or IDM firms. The ATMP process can also be performed in-house by      integrated manufacturers such as Intel, TSMC, Micron, Samsung, or SK Hynix, allowing for greater control over quality and supply chain.
+* Organization: OSAT (Outsourced Semiconductor Assembly and Test): Specialized companies like ASE, Amkor, or TATA that handle ATMP for fabless or IDM firms. The ATMP process can also be performed in-house by     integrated manufacturers such as Intel, TSMC, Micron, Samsung, or SK Hynix, allowing for greater control over quality and supply chain.
 
 * Flexibility: The ATMP can be outsourced to OSATs or integrated internally, depending on the company's model and scale.
 
@@ -412,17 +419,17 @@ This layout emphasizes separation of clean and non-clean areas to minimize conta
 
 * Offices: Administrative areas for management, engineering, and quality control teams.
 
-* Material Preparation and Storage: Dedicated space for preparing and storing raw materials like substrates, dies, bonding wires, and encapsulation compounds. This ensures materials are handled in controlled      conditions to prevent contamination.
+* Material Preparation and Storage: Dedicated space for preparing and storing raw materials like substrates, dies, bonding wires, and encapsulation compounds. This ensures materials are handled in controlled     conditions to prevent contamination.
 
-* Processing Zone (Clean Room: ISO Class 6 & 7): The core production area, maintained at high cleanliness standards (ISO Class 6 and 7, which allow limited particles per cubic meter). Key processes here include:
+* Processing Zone (Clean Room: ISO Class 6 & 7): The core production area, maintained at high cleanliness standards (ISO Class 6 and 7, which allow limited particles per cubic meter). Key processes include:
 
-* Die bonding: Attaching the die to the substrate.
+** Die bonding: Attaching the die to the substrate.
 
-* Wire or flip-chip bonding: Creating electrical connections (e.g., using thin wires or solder bumps).
+** Wire or flip-chip bonding: Creating electrical connections (e.g., using thin wires or solder bumps).
 
-* Encapsulation: Sealing the die with protective materials.
+** Encapsulation: Sealing the die with protective materials.
 
-* Flip-chip processes and RDL (Redistribution Layer) formation: For advanced packages, redistributing connections for better integration.
+** Flip-chip processes and RDL (Redistribution Layer) formation: For advanced packages, redistributing connections for better integration.
 
 Testing Area: Zone for post-assembly validation, including:
 
