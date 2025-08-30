@@ -75,9 +75,7 @@ The process involves multiple types of companies collaborating to produce a fini
 
 * OSAT (Outsourced Semiconductor Assembly and Test): Companies like ASE, Amkor, JCET, PTI, UTAC, and TSMC that handle packaging and testing. 
 
-
 Stages of the Back-End Process
-
 
 * Design: The initial stage where the semiconductor circuit is conceptualized and designed by fabless or IDM companies. This involves creating the blueprint for the integrated circuit.
 
@@ -88,7 +86,6 @@ Stages of the Back-End Process
 
 Sub-stages include:
 
-
 * Wafer Test: Individual dies on the wafer are tested for defects to ensure they meet performance standards.
 
 * Package: The tested dies are encapsulated in protective packages.
@@ -97,9 +94,7 @@ Sub-stages include:
 
 * Assembly: The final stage where the packaged chips are integrated into the final product (e.g., mounted on a PCB for devices like smartphones or computers). This step is often handled by OSATs or system         integrators.
 
-
 ### 1.2 - Understanding Package Requirements And Foundational Package Types
-
 
 #### 1.2.1 - Package Requirements<br><br>
 
@@ -126,7 +121,6 @@ The key factors to consider when choosing the right semiconductor package, which
 #### 1.2.2 - Typical Package Structure <br><br>
 
 <img width="1913" height="1060" alt="image" src="https://github.com/user-attachments/assets/1e709782-9d62-4cc1-9e10-b35631a4d11b" /><br><br>
-
 
 The layered structure with three main levels and their interconnections:
 
@@ -196,7 +190,6 @@ Surface Mount Technology (SMT):
 
 This anatomy showcases how package design evolves with technological demands, balancing cost, size, and performance. Semiconductor package structures, categorized by the type of substrate used: Leadframe, Laminate, and Advanced package substrates. 
 
-
 Leadframe Packages
 
 Leadframe packages use a metal frame (typically copper or alloy) as the substrate, with leads extending outward for electrical connections. 
@@ -210,7 +203,6 @@ Key examples include:
 
 * Leadframe-QFP (Quad Flat Package): A square package with leads on all four sides, using gold wirebonds and a robust leadframe structure.
 
-
 Laminate Packages
 
 Laminate packages use a multilayer organic substrate (e.g., epoxy-based laminates) for higher density and performance. Key examples include:
@@ -222,7 +214,6 @@ Laminate packages use a multilayer organic substrate (e.g., epoxy-based laminate
 * LGA (Land Grid Array): A flat package with contact pads instead of balls, mounted directly onto the board.
 
 * FC-CSP (Flip Chip Chip Scale Package): A compact flip-chip design with solder bumps on a laminate substrate, ideal for space-constrained applications.
-
 
 Advanced Package Substrates
 
@@ -253,7 +244,27 @@ The advanced packaging technologies like CoWoS (Chip on Wafer on Substrate) or s
 
 #### 1.4.1 - Redistribution Layers (RDL)
 
-RDL (Redistribution Layer) is a metal layer added on top of a die or wafer to reroute the I/O pads to new locations. This enables more flexible bump layouts, especially important for fan-out packages or wafer-level chip scale packaging (WLCSP).
+Redistribution Layers (RDL) are thin, patterned metal layers deposited on a semiconductor die or reconstituted wafer during advanced packaging processes, such as fan-out packages or wafer-level chip scale packaging (WLCSP). RDL reroutes the die's original bond pads—typically located along the edges or in a peripheral array—to a new layout that better suits the package's external connections. RDL effectively "redistributes" the electrical connections, enabling a more flexible and efficient interconnect design.
+
+Applications of RDL:
+
+* RDL reroutes bond pads to accommodate an area array of solder bumps, allowing high-density connections between the die and substrate in flip-chip designs.
+* In Fan-Out Wafer-Level Packaging (FO-WLP), RDL extends interconnects beyond the die edge onto the mold compound, supporting a larger number of input/output (I/O) connections for complex chips.
+* In 2.5D and 3D IC Packaging, RDL facilitates interconnections between multiple dies or an interposer, enabling stacking or side-by-side configurations.
+* RDL integrates multiple functionalities (e.g., memory, logic) within a single System-in-Package (SiP) by rerouting connections to optimize space and performance.
+
+Advantages of RDL: 
+
+* By redistributing pads to an area array, RDL supports a higher number of connections , crucial for advanced ICs with thousands of I/Os.
+* Shorter, optimized trace lengths reduce signal delay, capacitance, and inductance, enhancing speed and reducing power consumption in high-frequency applications.
+* RDL allows flexibility in design by customization of pad locations, accommodating various package types (e.g., BGA, CSP) and simplifying integration with substrates or PCBs.
+* RDL Enables smaller package sizes by eliminating the need for large peripheral bond pads, aligning with the demand for compact and miniature devices.
+* Optimized layouts can incorporate thermal vias or stress-relief features, improving heat dissipation and reliability under thermal expansion mismatches.
+* RDL supports multi-layer designs, allowing scalability for complex 2.5D/3D architectures without significant redesign.
+
+Thermal and Mechanical Benefits:
+
+Optimized layouts can incorporate thermal vias or stress-relief features, improving heat dissipation and reliability under thermal expansion mismatches.
 
 #### 1.4.2 - Interposers
 
