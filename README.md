@@ -911,32 +911,31 @@ Package Specifications:
 
 ![M6_Lecture1](https://github.com/user-attachments/assets/d4c3cb69-d5fa-437a-a135-183166b054b6)<br><br>
 
-#### Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)
+#### Step 1 : Launch AEDT and select Q3D <br><br>
 
-<img width="1917" height="1015" alt="M6_Lecture2" src="https://github.com/user-attachments/assets/17958ff3-2b4c-4547-a495-789eaf5396e8" />
+<img width="1917" height="1015" alt="M6_Lecture2" src="https://github.com/user-attachments/assets/17958ff3-2b4c-4547-a495-789eaf5396e8" /><br><br>
 
+### 5.2 - Creating the Die and Substrate
 
-### 5.2 - Creating the Die and Substrate in AEDT
-
-#### Step 2 : Define the working unit
+#### Step 2 : Define the model geometrical units
 
 Modeler -> Units...
 
-Choose mm or um as the working unit for creating the model.<br><br>
+Select mm or um as the geometrical unit for creating the model.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_2 1" src="https://github.com/user-attachments/assets/93610cf2-13f8-4a6d-84bd-ae046a6da093" /><br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_2 2" src="https://github.com/user-attachments/assets/dda72335-f464-4186-8d3a-b10f30406671" /><br><br>
 
-#### Step 3.1 : Create the Die Geometry
+#### Step 3.1 : Create the Die Geometry  (Draw -> Rectangle) 
 
-Select the rectangle tool from the ribbon or using the Menus (Draw -> Rectangle) to draw a rectangle
+Select the rectangle tool from the menu strip or using the Menus (Draw -> Rectangle) to draw a rectangle
 
-Now, double click on CreateRectangle Model -> Rectangle1 to open up its Properties Dialog box.
+Double click on CreateRectangle Model -> Rectangle1 to open up its Properties modeler box.
 
 Specify the position with one corner at the origin (0, 0, 0) and the dimensions as 3mm x 3mm<br><br>
 
-<img width="1920" height="1020" alt="Lab2_Package modelling_2 3" src="https://github.com/user-attachments/assets/9692034d-07a3-4c78-853a-45003989c923" <br><br>
+<img width="1920" height="1020" alt="Lab2_Package modelling_2 3" src="https://github.com/user-attachments/assets/9692034d-07a3-4c78-853a-45003989c923" /><br><br>
 
 Select Model -> Rectangle1 and from the menu bar: Modeler -> Surface -> Thicken Sheet... and set the thickness to 200 microns (0.2mm)<br><br>
 
