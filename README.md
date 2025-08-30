@@ -769,19 +769,19 @@ OSAT refers to the outsourcing of assembly and testing to specialized firms. Thi
 
 3. Package Testing: Packaged Testing phase in semiconductor manufacturing, divided into two main areas: the Processing Zone and the Testing Area, with a sequential testing process.<br><br>
    
-   ![M5_Lecture1 1](https://github.com/user-attachments/assets/7e9b813b-52d7-43ef-8677-9d55bf1a4a80)<br><br>
+![M5_Lecture1 1](https://github.com/user-attachments/assets/7e9b813b-52d7-43ef-8677-9d55bf1a4a80)<br><br>
 
-   Processing Zone (Clean room: ISO class 6 & 7): This area handles initial packaging steps in a controlled environment. Key activities include die bonding, wire or flip-chip bonding, encapsulation, and RDL       (Redistribution Layer) formation. Inspection is integral to the manufacturing process to ensure quality. Packages are loaded onto a tray after singulation, as shown in the image with a tray of individual       packaged chips.
+Processing Zone (Clean room: ISO class 6 & 7): This area handles initial packaging steps in a controlled environment. Key activities include die bonding, wire or flip-chip bonding, encapsulation, and RDL       (Redistribution Layer) formation. Inspection is integral to the manufacturing process to ensure quality. Packages are loaded onto a tray after singulation, as shown in the image with a tray of individual       packaged chips.
 
-   Testing Area (Electrical, burn-in, and reliability chamber tests): This area focuses on validating the packaged chips. The process involves:
+Testing Area (Electrical, burn-in, and reliability chamber tests): This area focuses on validating the packaged chips. The process involves:
    
-   AOST (Assembly Open and Short Test): Checks for open circuits and short circuits on the package board, using a package socket.<br><br>
+AOST (Assembly Open and Short Test): Checks for open circuits and short circuits on the package board, using a package socket.<br><br>
    
-   ![M5_Lecture1 2](https://github.com/user-attachments/assets/e46c17ad-b761-4858-8e6f-1bb3023f1809)<br><br>
+![M5_Lecture1 2](https://github.com/user-attachments/assets/e46c17ad-b761-4858-8e6f-1bb3023f1809)<br><br>
    
-   Burn-in Test: Elevated temperature and voltage and power cycling are applied to accelerate ageing to catch early-life reliability issues.
+Burn-in Test: Elevated temperature and voltage and power cycling are applied to accelerate ageing to catch early-life reliability issues.
    
-   Final Test: Conducts cold and hot tests to validate functional, parametric, reliability and validate the electrical performance of the packaged IC across temperature and voltage corners and ensure it meets     the datasheet specifications.
+Final Test: Conducts cold and hot tests to validate functional, parametric, reliability and validate the electrical performance of the packaged IC across temperature and voltage corners and ensure it meets     the datasheet specifications.
 
 6. System Level Tests (SLT) : The final stage involves testing the chips within a complete system (e.g., a device or board) to ensure they perform as expected in real-world conditions.
 
@@ -927,13 +927,13 @@ Select mm or um as the geometrical unit for creating the model.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_2 2" src="https://github.com/user-attachments/assets/dda72335-f464-4186-8d3a-b10f30406671" /><br><br>
 
-#### Step 3.1 : Create the Die Geometry  (Draw -> Rectangle) 
+#### Step 3.1 : Create the Die Geometry
 
-Select the rectangle tool from the menu strip or using the Menus (Draw -> Rectangle) to draw a rectangle
+Select the rectangle tool from the menu strip or using (Draw -> Rectangle) from the menu to draw a rectangle
 
-Double click on CreateRectangle Model -> Rectangle1 to open up its Properties modeler box.
+Double click on CreateRectangle Model -> Rectangle1 to pop up its Properties modeler box.
 
-Specify the position with one corner at the origin (0, 0, 0) and the dimensions as 3mm x 3mm<br><br>
+Specify the position with one corner at the origin (0, 0, 0) and the dimensions as XSize = 3mm and YSize= 3mm (3mm x 3mm)<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_2 3" src="https://github.com/user-attachments/assets/9692034d-07a3-4c78-853a-45003989c923" /><br><br>
 
@@ -947,19 +947,17 @@ Select Model -> Rectangle1 and from the menu bar: Modeler -> Surface -> Thicken 
 
 Open up the Properties Dialog box either by double clicking on Model -> Rectangle1
 
-Rename the geometry to Test Die
-
-Choose Silicon as the material from the Material Library.><br><br>
+Rename the geometry to Test Die, and select Silicon as the material from the Material Library.><br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_2 6" src="https://github.com/user-attachments/assets/0dd50176-80f9-43d4-b606-0229694c1320" /><br><br>
 
 #### Step 4.1 : Create the Substrate Geometry
 
-Draw another rectangle for the substrate (5mm x 5mm) and position (-1, -1, 0) it such that the die is at the center.<br><br>
+Draw another rectangle for the substrate and assign XSize = 5mm , YSize= 5mm (5mm x 5mm) and position it at (-1, -1, 0) such that the die is at the center.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_2 7" src="https://github.com/user-attachments/assets/9fac4954-ffe5-4759-ac69-fe1ca6485f5b" /><br><br>
 
-Set the thickness as -500 microns (-0.5mm). Note the negative sign so as to have the substrate lie beneath the die.<br><br>
+Set the thickness as -500 microns (-0.5mm). (The negative sign is to have the substrate lie beneath the die)<br><br>
 
 <img width="1903" height="1012" alt="Lab2_Package modelling_2 8" src="https://github.com/user-attachments/assets/e2bfc752-7295-41ac-a95e-17cc0dc241bc" /><br><br>
 
@@ -976,15 +974,15 @@ Draw a rectangle of the same size as that of the die (3mm x 3mm) and at the same
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 1" src="https://github.com/user-attachments/assets/f62e092e-bbc6-4f22-b7c7-fce055c971f9" /><br><br>
 
-Set the thickness to -100 microns (-0.1mm) as the Die Attach Material lies beneath the die and the substrate<br><br>
+Set the thickness to -100 microns (-0.1mm) such that the Die Attach Material lies beneath the die and the substrate<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 2" src="https://github.com/user-attachments/assets/f7ffbede-f67c-4a74-a832-fd7ab89e1561" /><br><br>
 
-Assign the material to Modified Eopxy<br><br>
+Assign the material to Modified Eopxy in the properties dialog box<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 3" src="https://github.com/user-attachments/assets/943ed05c-95ef-4c63-82b7-4ff0870af28d" /><br><br>
 
-NOTE: Assign different shades/ colours to adjacent components to easily discern in 3D view.<br><br>
+NOTE: Assign different shades/ colours to adjacent components to easily distinguish in 3D view.<br><br>
 
 <img width="1920" height="1020" alt="Lab2_Package modelling_3 4" src="https://github.com/user-attachments/assets/e78026a6-3fd1-4fa0-96c2-2322690a77b2" /><br><br>
 
